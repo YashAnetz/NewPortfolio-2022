@@ -616,6 +616,143 @@ svg {
   background-color: #403b4a;
 }
 
+.grid1 {
+  display: grid;
+  position: relative;
+  transition: 0.5s;
+  grid-template-columns: auto auto auto auto auto;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  top: 190px;
+
+  z-index: 1;
+}
+
+@keyframes up {
+  0% {
+    top: -600px;
+    display: none;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+.gridel1 {
+  position: relative;
+
+  margin: 15px;
+  background: none;
+  border: 2px white solid;
+
+  border-radius: 5px;
+  padding: 10px;
+
+  animation: up 0.5s;
+  font-size: 18px;
+  margin-bottom: 100px;
+
+  justify-content: center;
+  width: 150px;
+  text-align: center;
+
+  height: 70px;
+}
+
+.gridel1 img {
+  position: relative;
+  top: 10px;
+  left: -5px;
+}
+
+.we:hover {
+  background-color: #e65245;
+}
+
+.js:hover {
+  background-color: #f0db4f;
+}
+
+.an:hover {
+  background-color: #3ddc84;
+}
+
+.py:hover {
+  background-color: #4b8bbe;
+}
+
+.ga:hover {
+  background-color: cornflowerblue;
+}
+
+.gridel1:hover img {
+  filter: brightness(50%);
+}
+
+.gridel1:hover {
+  color: #403b4a;
+  transform: scale(1.1);
+  border: none;
+}
+
+.gridel1:focus {
+  background-color: #585856;
+  color: #d5eadf;
+
+  border: none;
+  transform: scale(1.1);
+}
+
+.work-header {
+  position: relative;
+  top: 270px;
+  z-index: 20;
+  text-align: center;
+  font-size: 2rem;
+  color: #e65245;
+}
+
+.grid1projects {
+  position: relative;
+  overflow-x: scroll;
+  box-sizing: content-box; /* So the width will be 100% + 17px */
+  margin-top: 10px;
+  display: grid;
+  transition: 0.2s;
+  grid-template-columns: auto auto auto auto auto auto;
+  top: 120px;
+  height: 500px;
+}
+
+.gridwd {
+  background-color: #4776e6;
+  height: 250px;
+
+  width: 400px;
+}
+
+.gridwd img {
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 250px;
+}
+
+.gridwd:hover img {
+  transform: scale(1.05);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
 /*
 ████████████████████████████████████
 █▄─▀█▀─▄█─▄▄─█▄─▄─▀█▄─▄█▄─▄███▄─▄▄─█
@@ -840,5 +977,82 @@ svg {
 
       border-bottom-width: 10px;
     }
+  }
+
+  .grid1 {
+    display: grid;
+    position: relative;
+    transition: 0.5s;
+    grid-template-columns: auto auto auto;
+    margin: 2px;
+
+    align-items: center;
+    text-align: center;
+
+    top: 190px;
+    height: 10px;
+
+    z-index: 1;
+  }
+
+  @keyframes up {
+    0% {
+      top: -600px;
+      display: none;
+    }
+
+    100% {
+      top: 0px;
+    }
+  }
+
+  .gridel1 {
+    position: relative;
+    margin-top: -80px;
+    background: none;
+    border: 2px white solid;
+
+    border-radius: 5px;
+
+    animation: up 0.5s;
+    font-size: 10px;
+    margin-bottom: 100px;
+
+    justify-content: space-evenly;
+    width: 100px;
+    text-align: center;
+
+    height: 50px;
+  }
+
+  .gridel1 img {
+    width: 20px;
+    top: 5px;
+    height: 20px;
+  }
+
+  .grid1projects {
+    position: relative;
+    overflow-x: scroll;
+    box-sizing: content-box; /* So the width will be 100% + 17px */
+    margin-top: 10px;
+    display: grid;
+    transition: 0.2s;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    top: 250px;
+    height: 500px;
+  }
+
+  .gridwd {
+    background-color: #4776e6;
+    height: 250px;
+
+    width: 400px;
+  }
+
+  .gridwd img {
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 250px;
   }
 }
