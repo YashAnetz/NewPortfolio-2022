@@ -620,7 +620,7 @@ svg {
   display: grid;
   position: relative;
   transition: 0.5s;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto;
   margin: 20px;
   justify-content: center;
   align-items: center;
