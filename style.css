@@ -563,7 +563,7 @@ svg {
   }
 
   .social {
-    top: 610px;
+    top: auto;
   }
 
   .menu.active {
