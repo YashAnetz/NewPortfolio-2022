@@ -338,7 +338,7 @@
   margin: 10px;
   justify-content: center;
 
-  top: 100px;
+  top: 180px;
 
   z-index: 1;
 }
@@ -476,7 +476,7 @@ svg {
 
 .skill-header {
   position: relative;
-  top: 85px;
+  top: 170px;
   text-align: center;
   font-size: 2rem;
   color: #e65245;
@@ -549,6 +549,11 @@ svg {
   display: auto;
 }
 
+.page2-buttons {
+  position: relative;
+  top: 60px;
+}
+
 /*
 ████████████████████████████████████
 █▄─▀█▀─▄█─▄▄─█▄─▄─▀█▄─▄█▄─▄███▄─▄▄─█
@@ -560,6 +565,11 @@ svg {
   .showcase,
   .showcase header {
     padding: 40px;
+  }
+
+  .page2-buttons {
+    position: relative;
+    top: 20px;
   }
 
   .social {
@@ -634,6 +644,7 @@ svg {
 
     grid-template-columns: auto auto;
     margin: 5px;
+    top: 100px;
 
     justify-content: center;
 
