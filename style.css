@@ -307,7 +307,7 @@
   height: 100%;
 
   transition: 0.5s;
-  top: 200%;
+  top: 170%;
   backdrop-filter: blur(5px);
   left: 0;
 
@@ -738,9 +738,5 @@ svg {
     position: relative;
     top: 180px;
     left: 80px;
-  }
-
-  .skills {
-    height: 115%;
   }
 }
