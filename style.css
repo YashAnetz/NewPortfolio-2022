@@ -562,6 +562,10 @@ svg {
     padding: 40px;
   }
 
+  .social {
+    top: 550px;
+  }
+
   .menu.active {
     position: absolute;
     top: 0;
