@@ -8,6 +8,8 @@ let scrollButton = document.querySelector(".scr");
 let frontscreen = document.querySelector(".showcase");
 let projectbutton = document.querySelector(".topro");
 let loading = document.querySelector(".loading");
+let ProjectScreen document.querySelector(".projects")
+
 
 //Buttons
 let allb = document.querySelector(".al");
@@ -32,6 +34,7 @@ menuButton.addEventListener("click", function () {
 
 document.addEventListener("scroll", function () {
   showFunction();
+  showFunction2();
 });
 
 scrollButton.addEventListener("click", function () {
@@ -43,6 +46,13 @@ function showFunction() {
   skillsScreen.classList.add("AfterScroll");
   skillsScreen.classList.remove("BeforeScroll");
 }
+
+function showFunction() {
+  ProjectScreen.classList.add("AfterScroll");
+  ProjectScreen.classList.remove("BeforeScroll");
+}
+
+
 
 allb.addEventListener("click", function () {
   console.log("hi");
