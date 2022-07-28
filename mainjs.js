@@ -8,7 +8,7 @@ let scrollButton = document.querySelector(".scr");
 let frontscreen = document.querySelector(".showcase");
 let projectbutton = document.querySelector(".topro");
 let loading = document.querySelector(".loading");
-let ProjectScreen document.querySelector(".projects")
+let ProjectScreen = document.querySelector(".projects")
 
 
 //Buttons
