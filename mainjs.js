@@ -47,7 +47,7 @@ function showFunction() {
   skillsScreen.classList.remove("BeforeScroll");
 }
 
-function showFunction() {
+function showFunction2() {
   ProjectScreen.classList.add("AfterScroll");
   ProjectScreen.classList.remove("BeforeScroll");
 }
