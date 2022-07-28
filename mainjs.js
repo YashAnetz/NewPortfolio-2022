@@ -5,6 +5,9 @@ let skillsScreen = document.querySelector(".skillcon");
 let skillClass = document.querySelector(".skills");
 let overlay = document.querySelector(".overlay");
 let scrollButton = document.querySelector(".scr");
+let frontscreen = document.querySelector(".showcase");
+let projectbutton = document.querySelector(".topro");
+let loading = document.querySelector(".loading");
 
 menuButton.addEventListener("click", function () {
   menu.classList.toggle("active");
@@ -17,7 +20,7 @@ document.addEventListener("scroll", function () {
 
 scrollButton.addEventListener("click", function () {
   showFunction();
-  document.getElementById("grid").scrollIntoView();
+  document.getElementById("first").scrollIntoView();
 });
 
 function showFunction() {
