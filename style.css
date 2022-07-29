@@ -42,7 +42,7 @@
   width: 60px;
   z-index: 2;
   height: 60px;
-  background: url(/Images/menu.png);
+  background: url(/Images/mena.png);
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
@@ -720,9 +720,16 @@ svg {
   position: relative;
   top: 270px;
   z-index: 20;
+  background: url(/gifd/back.gif);
+
+  background-attachment: fixed;
+  background-position: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   font-size: 2rem;
-  color: #e65245;
+  color: #f4ebea;
 }
 
 .grid1projects {
@@ -733,7 +740,7 @@ svg {
   display: grid;
   animation: procards 0.5s;
   transition: 0.2s;
-  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
   top: 120px;
   height: 500px;
 }
@@ -1155,7 +1162,7 @@ svg {
 }
 
 .contactel {
-  height: 250px;
+  height: 280px;
 
   margin: 20px;
   /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
@@ -1166,10 +1173,10 @@ svg {
 
 .contactel img {
   position: relative;
-  left: 38%;
+  left: 33%;
   top: 10%;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-  padding: 20px;
+
   border-radius: 50%;
 }
 
@@ -1179,6 +1186,7 @@ svg {
 
 .email img {
   background-color: #e65245;
+  padding: 20px;
 }
 
 .email h1 {
@@ -1202,6 +1210,7 @@ svg {
 
 .socials img {
   background-color: #f0db4f;
+  padding: 20px;
 }
 
 .socials h1 {
@@ -1229,7 +1238,8 @@ svg {
 }
 
 .spotify img {
-  background-color: slateblue;
+  background-color: #8e54e9;
+  padding: 20px;
 }
 
 .spot {
@@ -1239,6 +1249,207 @@ svg {
   width: 235px;
   height: 80px;
   margin: 5px;
+}
+
+.address {
+  border: #3ddc84 2px solid;
+}
+
+.conimg {
+  background-color: #3ddc84;
+  padding: 20px;
+}
+
+.address h1 {
+  position: relative;
+  top: 30px;
+  left: 70px;
+  font-size: 20px;
+}
+
+#conad {
+  padding: 2px;
+  background-color: #3ddc84;
+  left: -57px;
+  top: 84px;
+
+  position: relative;
+}
+
+.address h2 {
+  position: relative;
+  color: #3ddc84;
+  left: 80px;
+  font-size: 17px;
+  top: 50px;
+}
+
+#conad1 {
+  padding: 2px;
+  background-color: #3ddc84;
+  left: 34px;
+  top: 64px;
+
+  position: relative;
+}
+
+.address h3 {
+  position: relative;
+  color: #3ddc84;
+  left: 80px;
+  font-size: 17px;
+  top: 30px;
+}
+
+.contactel .sm {
+  position: relative;
+  left: 75px;
+  color: white;
+  background: none;
+  border: 2px #e65245 solid;
+  padding: 10px;
+  width: 100px;
+  top: 50px;
+}
+
+.spotify h1 {
+  position: relative;
+  top: -70px;
+  left: 60px;
+}
+
+.spotify .song {
+  position: relative;
+  top: 6px;
+  left: 70px;
+  padding: 5px;
+  width: 20px;
+  border: none;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.spotify h2 {
+  position: relative;
+  font-size: 13px;
+  top: 29px;
+  left: 20px;
+
+  color: white;
+}
+
+.s1 {
+  background-color: #3c3b3e;
+}
+.s2 {
+  background-color: tomato;
+}
+.s3 {
+  background-color: #f0db4f;
+}
+
+.s4 {
+  background-color: #4b8bbe;
+}
+.s5 {
+  background-color: #3ddc84;
+}
+
+.email:hover {
+  background-color: #e65245;
+}
+
+.email:hover h1 {
+  color: #2c2b2d;
+}
+
+.email:hover h2 {
+  color: white;
+}
+
+.email:hover .sm {
+  border: 2px white solid;
+}
+
+.email:hover img {
+  box-shadow: none;
+}
+
+.email .sm:hover {
+  background-color: #3ddc84;
+  border: none;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.socials:hover {
+  background-color: #f0db4f;
+}
+
+.socials:hover h1 {
+  color: #2c2b2d;
+}
+
+.socials:hover h2 {
+  color: rgb(158, 146, 146);
+  cursor: pointer;
+}
+
+.socials h2:hover {
+  color: #3ddc84;
+}
+
+.socials:hover img {
+  box-shadow: none;
+}
+
+.address:hover {
+  background-color: #3ddc84;
+}
+
+.address:hover h2 {
+  color: #3c3b3e;
+}
+
+.address:hover h3 {
+  color: #3c3b3e;
+}
+
+.address:hover img {
+  box-shadow: none;
+}
+
+.spotify:hover {
+  background-color: #8e54e9;
+}
+
+.spotify:hover h1 {
+  color: #2c2b2d;
+}
+
+.spotify:hover img {
+  box-shadow: none;
+}
+
+.spotify:hover button {
+  box-shadow: none;
+  border: 1px black dotted;
+}
+
+.spotify button:hover {
+  transform: scale(1.1);
+}
+
+.spot {
+  animation: spot 1s;
+}
+
+.yotubesection1 .head {
+  position: relative;
+  left: 50%;
+  width: 100px;
+  top: -13%;
+  font-size: 25px;
 }
 
 /*
@@ -1317,7 +1528,7 @@ svg {
     width: 60px;
     z-index: 2;
     height: 60px;
-    background: url(/Images/menu.png);
+    background: url(/Images/mena.png);
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: center;
@@ -1527,7 +1738,7 @@ svg {
     margin-top: 10px;
     display: grid;
     transition: 0.2s;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
     top: 250px;
     height: 500px;
   }
@@ -1737,23 +1948,32 @@ svg {
     grid-template-columns: auto;
     top: 40px;
 
-    height: 1800px;
+    height: 1200px;
   }
 
   .socials {
     position: relative;
-    top: -170px;
+    top: -30px;
   }
 
   .youtubesectionandcontact {
     background-color: #2c2b2d;
     position: relative;
-    top: 1100px;
+    top: 1010px;
     height: 1900px;
   }
 
   .spotify {
     position: relative;
-    top: -340px;
+    top: -90px;
+  }
+
+  .address {
+    position: relative;
+    top: -60px;
+  }
+
+  .head {
+    display: none;
   }
 }
