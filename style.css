@@ -1244,9 +1244,9 @@ svg {
 
 .spot {
   position: relative;
-
-  top: 50px;
-  width: 235px;
+  left: -13px;
+  top: 150px;
+  width: 80px;
   height: 80px;
   margin: 5px;
 }
@@ -1314,14 +1314,14 @@ svg {
 
 .spotify h1 {
   position: relative;
-  top: -70px;
-  left: 60px;
+  top: 25px;
+  left: 58px;
 }
 
 .spotify .song {
   position: relative;
-  top: 6px;
-  left: 70px;
+  top: 100px;
+  left: 67px;
   padding: 5px;
   width: 20px;
   border: none;
@@ -1332,7 +1332,7 @@ svg {
 .spotify h2 {
   position: relative;
   font-size: 13px;
-  top: 29px;
+  top: 123px;
   left: 20px;
 
   color: white;
@@ -1353,6 +1353,10 @@ svg {
 }
 .s5 {
   background-color: #3ddc84;
+}
+
+.s1:hover h1 {
+  background-color: red;
 }
 
 .email:hover {
