@@ -30,6 +30,9 @@ let jsbs = document.querySelector(".javascript");
 let androids = document.querySelector(".android");
 let pys = document.querySelector(".python");
 let games = document.querySelector(".gaming");
+let spotifyCard = document.querySelector(".spotify");
+
+let spotifyLogo = document.querySelector(".spotifylogo");
 
 //song buttons
 
@@ -165,4 +168,38 @@ green.addEventListener("click", function () {
 
   spotify.src =
     "https://open.spotify.com/embed/track/34gCuhDGsG4bRPIf9bb02f?utm_source=generator";
+});
+
+grey.addEventListener("click", function () {
+  spotifyCard.style = " background-color: #3c3b3e;";
+  spotifyLogo.style = " background-color: #3c3b3e; box-shadow: none;";
+
+  console.log("hi");
+});
+
+red.addEventListener("click", function () {
+  spotifyCard.style = " background-color:tomato;";
+  spotifyLogo.style = " background-color: tomato; box-shadow: none;";
+
+  console.log("hi");
+});
+yellow.addEventListener("click", function () {
+  spotifyCard.style = " background-color:#f0db4f;";
+  spotifyLogo.style = " background-color: #f0db4f; box-shadow: none;";
+
+  console.log("hi");
+});
+
+blue.addEventListener("click", function () {
+  spotifyCard.style = " background-color: #4b8bbe;";
+  spotifyLogo.style = " background-color: #4b8bbe; box-shadow: none;";
+
+  console.log("hi");
+});
+
+green.addEventListener("click", function () {
+  spotifyCard.style = " background-color: #3ddc84;";
+  spotifyLogo.style = " background-color: #3ddc84; box-shadow: none;";
+
+  console.log("hi");
 });
