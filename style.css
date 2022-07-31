@@ -6,6 +6,8 @@
   margin: 0;
   transition: 0.2s;
   padding: 0;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
@@ -308,7 +310,7 @@
 
   transition: 0.5s;
   top: 200%;
-  backdrop-filter: blur(5px);
+
   left: 0;
 
   bottom: 0;
@@ -327,7 +329,7 @@
   margin: auto;
   color: #e1e1e1;
 
-  background-color: #403b4a;
+  background-color: #2c2b2d;
 }
 
 .grid {
@@ -478,7 +480,6 @@ svg {
   position: relative;
   z-index: 500;
   top: 170px;
-  background: url(/gifd/back.gif);
 
   background-attachment: fixed;
   background-position: center;
@@ -599,11 +600,12 @@ svg {
 .projects {
   position: absolute;
   width: 100%;
+  background-color: #2c2b2d;
   height: 100%;
 
   transition: 0.5s;
   top: 200%;
-  backdrop-filter: blur(5px);
+
   left: 0;
 
   bottom: 0;
@@ -621,8 +623,6 @@ svg {
   right: 0;
   margin: auto;
   color: #e1e1e1;
-
-  background-color: #3c3b3e;
 }
 
 .grid1 {
@@ -720,7 +720,6 @@ svg {
   position: relative;
   top: 270px;
   z-index: 20;
-  background: url(/gifd/back.gif);
 
   background-attachment: fixed;
   background-position: center;
@@ -985,11 +984,11 @@ svg {
 .youtubesectionandcontact {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 120%;
 
   transition: 0.5s;
   top: 400%;
-  backdrop-filter: blur(5px);
+
   left: 0;
 
   bottom: 0;
@@ -1008,7 +1007,7 @@ svg {
   margin: auto;
   color: #e1e1e1;
 
-  background-color: #2c2b2d;
+  background-color: #3c3b3e;
 }
 
 .lastgrid {
@@ -1034,8 +1033,6 @@ svg {
 
   animation: procards 0.5s;
   transition: 0.2s;
-
-  background: url(/gifd/ytb.gif);
 
   background-attachment: fixed;
   background-position: center;
@@ -1456,7 +1453,112 @@ svg {
   font-size: 25px;
 }
 
-/*
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+
+  transition: 0.5s;
+  top: 550%;
+  backdrop-filter: blur(5px);
+  left: 0;
+
+  bottom: 0;
+
+  /* Set a specific height */
+  min-height: 100px;
+
+  /* Create the parallax scrolling effect */
+  /* background-attachment: fixed;
+  background-position: center;
+
+  background-repeat: no-repeat;
+  background-size: cover; */
+  transition: 0.5s;
+  right: 0;
+  margin: auto;
+  background-color: #2c2b2d;
+  border-top: 2px rgba(255, 255, 255, 0.079) solid;
+}
+
+.footerg1 {
+  position: relative;
+
+  display: grid;
+  overflow: hidden;
+
+  animation: procards 0.5s;
+  transition: 0.2s;
+
+  grid-template-columns: auto auto auto auto;
+  width: inherit;
+  justify-content: center;
+}
+
+.f1 {
+  width: 375px;
+  height: 250px;
+  margin: 5px;
+}
+
+.footlogo {
+  width: 150px;
+  position: relative;
+  left: 50px;
+  top: 25px;
+}
+
+.f1 {
+  position: relative;
+  top: 30px;
+}
+
+.quick h1:hover {
+  color: #3ddc84;
+
+  cursor: pointer;
+}
+
+.f1 h2 {
+  color: #e65245;
+}
+
+.footerg2 {
+  position: relative;
+
+  top: -4px;
+  height: 50px;
+
+  background-color: #2c2b2d;
+  border-top: 2px rgba(250, 238, 238, 0.079) solid;
+}
+
+.f1 img:hover {
+  transform: scale(1.1);
+}
+
+.footerg2 h2 {
+  position: relative;
+  background-color: #323132;
+  font-size: 15px;
+  width: 150px;
+  color: rgb(123, 119, 119);
+
+  border: rgba(0, 0, 0, 0.267) 2px solid;
+  padding: 4px;
+  margin: 6px;
+  text-align: center;
+}
+
+.footerg2 h1 {
+  position: relative;
+  color: rgb(123, 119, 119);
+  font-size: 15px;
+  margin: 12px;
+  float: right;
+}
+
+/*;
 ████████████████████████████████████
 █▄─▀█▀─▄█─▄▄─█▄─▄─▀█▄─▄█▄─▄███▄─▄▄─█
 ██─█▄█─██─██─██─▄─▀██─███─██▀██─▄█▀█
@@ -1899,7 +2001,7 @@ svg {
     animation: procards 0.5s;
     transition: 0.2s;
 
-    background: url(/gifd/ytb.gif);
+    /* background: url(/gifd/ytb.gif); */
 
     background-attachment: fixed;
     background-position: center;
@@ -1961,10 +2063,10 @@ svg {
   }
 
   .youtubesectionandcontact {
-    background-color: #2c2b2d;
     position: relative;
     top: 1010px;
     height: 1900px;
+    background-color: #2c2b2d;
   }
 
   .spotify {
@@ -1979,5 +2081,88 @@ svg {
 
   .head {
     display: none;
+  }
+
+  .footer {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+
+    transition: 0.5s;
+    top: 800%;
+    backdrop-filter: blur(5px);
+    left: 0;
+
+    bottom: 0;
+
+    /* Set a specific height */
+    min-height: 100px;
+
+    /* Create the parallax scrolling effect */
+    /* background-attachment: fixed;
+    background-position: center;
+  
+    background-repeat: no-repeat;
+    background-size: cover; */
+    transition: 0.5s;
+    right: 0;
+    margin: auto;
+    background-color: #2c2b2d;
+    border-top: 2px rgba(255, 255, 255, 0.079) solid;
+  }
+
+  .footerg1 {
+    position: relative;
+
+    display: grid;
+    overflow: hidden;
+
+    animation: procards 0.5s;
+    transition: 0.2s;
+
+    grid-template-columns: auto auto;
+    width: inherit;
+    justify-content: center;
+  }
+
+  .f1 {
+    width: 200px;
+    height: 250px;
+    margin: 5px;
+  }
+
+  .footlogo {
+    position: relative;
+    left: 60px;
+    top: 50px;
+    width: 100px;
+  }
+
+  .extra {
+    position: relative;
+    left: 210px;
+    top: -20px;
+  }
+
+  .socf {
+    width: 100px;
+    left: -140px;
+    height: 50px;
+    top: -50px;
+  }
+
+  .socf img {
+    width: 40px;
+  }
+
+  .footerg2 {
+    height: 10%;
+
+    position: relative;
+    top: 20px;
+  }
+
+  body {
+    background-color: #3c3b3e;
   }
 }
