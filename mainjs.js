@@ -49,21 +49,10 @@ menuButton.addEventListener("click", function () {
   menuButton.classList.toggle("active");
 });
 
-document.addEventListener("scroll", function () {
-  showFunction();
-  showFunction2();
-  showFunction3();
-});
-
 scrollButton.addEventListener("click", function () {
   showFunction();
   document.getElementById("first").scrollIntoView();
 });
-
-function showFunction() {
-  skillsScreen.classList.add("AfterScroll");
-  skillsScreen.classList.remove("BeforeScroll");
-}
 
 function showFunction2() {
   projects.classList.add("AfterScroll");
@@ -137,6 +126,8 @@ gameb.addEventListener("click", function () {
 
 grey.addEventListener("click", function () {
   console.log("hi");
+  spotifyCard.style = " background-color: #3c3b3e; border: 2px #3c3b3e solid;";
+  spotifyLogo.style = " background-color: #3c3b3e; box-shadow: none;";
 
   spotify.src =
     "https://open.spotify.com/embed/track/7BKLCZ1jbUBVqRi2FVlTVw?utm_source=generator&theme=0";
@@ -144,6 +135,8 @@ grey.addEventListener("click", function () {
 
 red.addEventListener("click", function () {
   console.log("hi");
+  spotifyCard.style = " background-color:tomato; border: 2px tomato solid;";
+  spotifyLogo.style = " background-color: tomato; box-shadow: none;";
 
   spotify.src =
     "https://open.spotify.com/embed/track/5d6Mjuu2uCGRPYpFjGpCX5?utm_source=generator";
@@ -152,12 +145,18 @@ red.addEventListener("click", function () {
 yellow.addEventListener("click", function () {
   console.log("hi");
 
+  spotifyCard.style = " background-color:#f0db4f;border: 2px #f0db4f solid;";
+  spotifyLogo.style = " background-color: #f0db4f; box-shadow: none;";
+
   spotify.src =
     "https://open.spotify.com/embed/track/2dpaYNEQHiRxtZbfNsse99?utm_source=generator";
 });
 
 blue.addEventListener("click", function () {
   console.log("hi");
+
+  spotifyCard.style = " background-color: #4b8bbe;border: 2px #4b8bbe solid;";
+  spotifyLogo.style = " background-color: #4b8bbe; box-shadow: none;";
 
   spotify.src =
     "https://open.spotify.com/embed/track/3DamFFqW32WihKkTVlwTYQ?utm_source=generator";
@@ -166,40 +165,17 @@ blue.addEventListener("click", function () {
 green.addEventListener("click", function () {
   console.log("hi");
 
+  spotifyCard.style = " background-color: #3ddc84;border: 2px #3ddc84 solid;";
+  spotifyLogo.style = " background-color: #3ddc84; box-shadow: none;";
+
   spotify.src =
     "https://open.spotify.com/embed/track/34gCuhDGsG4bRPIf9bb02f?utm_source=generator";
 });
 
-grey.addEventListener("click", function () {
-  spotifyCard.style = " background-color: #3c3b3e;";
-  spotifyLogo.style = " background-color: #3c3b3e; box-shadow: none;";
+function myFunction() {
+  /* Copy the text inside the text field */
+  navigator.clipboard.writeText("https://yashahire.netlify.app/");
 
-  console.log("hi");
-});
-
-red.addEventListener("click", function () {
-  spotifyCard.style = " background-color:tomato;";
-  spotifyLogo.style = " background-color: tomato; box-shadow: none;";
-
-  console.log("hi");
-});
-yellow.addEventListener("click", function () {
-  spotifyCard.style = " background-color:#f0db4f;";
-  spotifyLogo.style = " background-color: #f0db4f; box-shadow: none;";
-
-  console.log("hi");
-});
-
-blue.addEventListener("click", function () {
-  spotifyCard.style = " background-color: #4b8bbe;";
-  spotifyLogo.style = " background-color: #4b8bbe; box-shadow: none;";
-
-  console.log("hi");
-});
-
-green.addEventListener("click", function () {
-  spotifyCard.style = " background-color: #3ddc84;";
-  spotifyLogo.style = " background-color: #3ddc84; box-shadow: none;";
-
-  console.log("hi");
-});
+  /* Alert the copied text */
+  alert("📋Copied Site Link to Clipboard");
+}
