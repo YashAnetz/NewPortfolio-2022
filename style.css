@@ -12,6 +12,65 @@
   font-family: "Poppins", sans-serif;
 }
 
+#fbs {
+  width: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: navajowhite;
+}
+
+body {
+  cursor: url(https://img.icons8.com/external-color-for-better-life-royyan-wijaya/64/000000/external-cursor-user-interface-color-for-better-life-royyan-wijaya.png),
+    auto;
+  animation: cursor 0.5s;
+}
+
+@keyframes cursor {
+  0% {
+    transform: scale(5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.twitter-share-button img {
+  background-color: white;
+  padding: 3px;
+  position: relative;
+  border: none;
+  border-radius: 3px;
+  top: 5px;
+}
+
+.sharein {
+  width: 26px;
+  background-color: white;
+  padding: 3px;
+  position: relative;
+  border: none;
+  border-radius: 3px;
+  top: 5px;
+}
+
+.linkc {
+  position: relative;
+  top: -3px;
+  left: 0px;
+  background-color: crimson;
+  border-radius: 3px;
+  border: none;
+  width: 26px;
+  height: 26px;
+}
+
+.linkc img {
+  width: 15px;
+}
+
 .showcase {
   position: absolute;
   transition: 0.5s;
@@ -44,13 +103,26 @@
   width: 60px;
   z-index: 2;
   height: 60px;
-  background: url(/Images/mena.png);
+  background: url(https://img.icons8.com/external-inkubators-glyph-inkubators/25/000000/external-menu-email-inkubators-glyph-inkubators.png);
+
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
   background-color: rgb(246, 246, 246);
+
+  animation: changeLetter 2s linear 1;
   border-radius: 50%;
   cursor: pointer;
+}
+
+@keyframes changeLetter {
+  0% {
+    background: url(/Images/logoimg.png);
+  }
+
+  100% {
+    background: url(/Images/menu.png);
+  }
 }
 
 .toggle.active {
@@ -256,12 +328,13 @@
 
 .menu {
   position: relative;
-  right: 50px;
-  display: grid;
 
+  display: grid;
+  border-radius: 50%;
   width: 0px;
   transition: 1s;
   height: auto;
+
   top: 50px;
 
   transition: 0.5s;
@@ -271,13 +344,17 @@
   position: absolute;
   top: 0;
   z-index: 10;
-  background-color: rgba(3, 5, 8, 0.7);
+  background-color: white;
   right: 70px;
-  color: #403b4a;
-  width: 180px;
-  transition: 1s;
-  height: 30%;
-  border-radius: 20px;
+
+  width: 190px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  height: 40%;
+
+  border-radius: 10px;
   margin: 10px;
 
   display: flex;
@@ -291,11 +368,12 @@
 
 .menu ul li a {
   text-decoration: none;
-  color: #e1e1e1;
+  color: #2c2b2d;
   font-size: 24px;
 }
 
 .menu ul li a:hover {
+  border-bottom: 5px crimson solid;
   color: crimson;
 }
 
@@ -1020,7 +1098,7 @@ svg {
   transition: 0.2s;
   grid-template-columns: auto;
   top: 50px;
-  height: 550px;
+  height: 450px;
 }
 
 .gridyoutube {
@@ -1139,6 +1217,11 @@ svg {
   left: 25px;
 }
 
+.visityt:hover {
+  transform: scale(1.1);
+  background-color: rgba(252, 109, 109, 0.09);
+}
+
 .contactgrid {
   position: relative;
   overflow-x: scroll;
@@ -1152,7 +1235,7 @@ svg {
   transition: 0.2s;
 
   grid-template-columns: auto auto auto auto;
-  top: -80px;
+  top: -20px;
   justify-content: center;
   margin: 20px;
   height: 300px;
@@ -1449,7 +1532,7 @@ svg {
   position: relative;
   left: 50%;
   width: 100px;
-  top: -13%;
+  top: -3%;
   font-size: 25px;
 }
 
@@ -1584,12 +1667,12 @@ svg {
     position: absolute;
     top: 0;
     z-index: 10;
-    background-color: rgba(52, 53, 55, 0.7);
+    background-color: white;
     right: 0;
     color: #403b4a;
     width: 150px;
     height: inherit;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 10px;
 
     display: flex;
@@ -1601,7 +1684,12 @@ svg {
   }
 
   .menu .ctn:hover {
-    color: white;
+    color: #3ddc84;
+  }
+
+  .menu ul li a:hover {
+    border-bottom: 2px crimson solid;
+    color: crimson;
   }
 
   .menu ul {
@@ -1611,7 +1699,7 @@ svg {
 
   .menu ul li a {
     text-decoration: none;
-    color: #e1e1e1;
+    color: #2c2b2d;
     font-size: 20px;
   }
 
@@ -1634,7 +1722,7 @@ svg {
     width: 60px;
     z-index: 2;
     height: 60px;
-    background: url(/Images/mena.png);
+    background: url(https://img.icons8.com/external-inkubators-glyph-inkubators/25/000000/external-menu-email-inkubators-glyph-inkubators.png);
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: center;
