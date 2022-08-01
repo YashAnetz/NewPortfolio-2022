@@ -51,8 +51,17 @@ menuButton.addEventListener("click", function () {
 
 scrollButton.addEventListener("click", function () {
   showFunction();
+  showFunction2();
+  showFunction3();
   document.getElementById("first").scrollIntoView();
 });
+
+document.addEventListener("scroll", showFunction());
+
+function showFunction() {
+  skillClass.classList.add("AfterScroll");
+  skillClass.classList.remove("BeforeScroll");
+}
 
 function showFunction2() {
   projects.classList.add("AfterScroll");
