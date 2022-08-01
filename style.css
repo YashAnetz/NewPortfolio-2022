@@ -24,17 +24,6 @@ a {
 body {
   cursor: url(https://img.icons8.com/external-color-for-better-life-royyan-wijaya/64/000000/external-cursor-user-interface-color-for-better-life-royyan-wijaya.png),
     auto;
-  animation: cursor 0.5s;
-}
-
-@keyframes cursor {
-  0% {
-    transform: scale(5);
-  }
-
-  100% {
-    transform: scale(1);
-  }
 }
 
 .twitter-share-button img {
@@ -103,14 +92,14 @@ body {
   width: 60px;
   z-index: 2;
   height: 60px;
-  background: url(https://img.icons8.com/external-inkubators-glyph-inkubators/25/000000/external-menu-email-inkubators-glyph-inkubators.png);
 
+  /* background: url(https://img.icons8.com/external-inkubators-glyph-inkubators/25/000000/external-menu-email-inkubators-glyph-inkubators.png); */
+  background: url(/gifd/sphs.gif);
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
   background-color: rgb(246, 246, 246);
 
-  animation: changeLetter 2s linear 1;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -1722,7 +1711,7 @@ svg {
     width: 60px;
     z-index: 2;
     height: 60px;
-    background: url(https://img.icons8.com/external-inkubators-glyph-inkubators/25/000000/external-menu-email-inkubators-glyph-inkubators.png);
+    background: url(/gifd/sphs.gif);
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: center;
