@@ -85,7 +85,7 @@ div.container {
   color: white;
   padding: 10px;
   text-align: center;
-  width: 166px;
+  width: 188px;
 }
 
 .menel:hover {
@@ -98,13 +98,19 @@ div.container {
   box-shadow: inset 0px 0px 5px #c1c1c1;
 }
 
+.menel:active {
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+  -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+  box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+
 .Intro {
   display: grid;
   grid-template-columns: auto auto;
   animation: entry 1s;
+  height: 480px;
 
   justify-content: center;
-  margin-top: 50px;
 }
 
 @keyframes entry {
@@ -122,6 +128,7 @@ div.container {
 .introel {
   width: 350px;
   margin: 20px;
+  margin-top: 50px;
 
   font-size: 10px;
 }
@@ -366,6 +373,253 @@ a {
   font-weight: bolder;
 }
 
+.uni {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.edu {
+  animation: entry 1s;
+}
+
+.eduel1 {
+  position: relative;
+  margin: auto;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 15px;
+  top: 0;
+  width: 500px;
+  height: 330px;
+  margin-bottom: 40px;
+  padding: 10px;
+
+  left: 0;
+  border: 2px green solid;
+  border-radius: 20px;
+
+  right: 0;
+  top: 100px;
+
+  justify-content: center;
+}
+
+.eduel1 h1 {
+  color: green;
+}
+
+.eduel1 h2 {
+  color: #888;
+  position: relative;
+  top: -10px;
+  font-size: 18px;
+}
+
+.eduel1 h3 {
+  position: relative;
+  top: -180px;
+  left: 57%;
+  padding: 4px;
+  background-color: green;
+  width: 200px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.loc {
+  width: 25px;
+  position: relative;
+  top: 4px;
+  height: 25px;
+}
+
+.eduel2 {
+  position: relative;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 15px;
+
+  align-items: center;
+  top: 0;
+  width: 500px;
+  height: 330px;
+  margin-bottom: 150px;
+  padding: 10px;
+
+  left: 0;
+  border: 2px goldenrod solid;
+  border-radius: 20px;
+
+  right: 0;
+  top: 100px;
+
+  justify-content: center;
+}
+
+.eduel2 h1 {
+  color: goldenrod;
+}
+
+.eduel2 h2 {
+  color: #888;
+  position: relative;
+  top: -8px;
+  font-size: 18px;
+}
+
+.eduel2 h3 {
+  position: relative;
+  top: -180px;
+  left: 57%;
+  padding: 4px;
+  background-color: goldenrod;
+  width: 200px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.Exp {
+  animation: entry 1s;
+
+  height: 700px;
+}
+
+.Expgrid {
+  display: grid;
+  top: 100px;
+  position: relative;
+
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.expel {
+  width: 450px;
+  margin: 20px;
+}
+
+.expel img {
+  border-radius: 50%;
+
+  width: 300px;
+}
+
+.expel h1 {
+  font-size: 28px;
+  color: crimson;
+}
+
+.expel h2 {
+  font-size: 18px;
+  color: #79838c;
+}
+
+.expel h4 {
+  font-size: 14px;
+  color: #79838c;
+}
+
+.expel h3 {
+  font-size: 15px;
+}
+
+.skillss {
+  margin: auto;
+  margin-top: 70px;
+  animation: entry 1s;
+  width: 600px;
+}
+
+.skillel {
+  margin-bottom: 30px;
+}
+
+.skillel img {
+  margin-top: 20px;
+  width: 80px;
+  background-color: #383e44;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.skillel h1 {
+  color: crimson;
+}
+
+.cert {
+  margin: auto;
+  margin-top: 70px;
+  animation: entry 1s;
+  width: 600px;
+}
+
+.certel {
+  margin-bottom: 30px;
+}
+
+.certimg {
+  margin-top: 20px;
+  width: 80px;
+
+  border-radius: 50%;
+}
+
+.certel h1 {
+  color: crimson;
+}
+
+.certel button {
+  width: 25px;
+  border: none;
+  background: none;
+  position: relative;
+}
+
+.certel button:hover {
+  transform: scale(1.1);
+}
+
+.pro {
+  margin: 50px;
+  animation: entry 1s;
+}
+
+.proel {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+
+  margin-right: 10px;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+
+  border-bottom: 2px gray solid;
+}
+
+.proimg {
+  position: relative;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.proel button {
+  background: none;
+  border: none;
+  width: 50;
+  height: 50px;
+}
+
+.proel button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 @media (max-width: 798px) {
   .Intro {
     display: grid;
@@ -381,6 +635,150 @@ a {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+  }
+
+  .edu {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+
+  .eduel1 {
+    position: relative;
+    margin: 16px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    top: 0;
+    width: 380px;
+    height: 380px;
+    margin-bottom: 40px;
+    padding: 10px;
+
+    left: 0;
+    border: 2px green solid;
+    border-radius: 20px;
+
+    right: 0;
+    top: 100px;
+
+    justify-content: center;
+  }
+
+  .eduel1 h1 {
+    font-size: 25px;
+  }
+
+  .eduel1 h2 {
+    font-size: 14px;
+    position: relative;
+    top: 1px;
+  }
+
+  .eduel1 h3 {
+    width: 130px;
+    top: -210px;
+    left: 230px;
+    font-size: 12px;
+  }
+  .eduel2 {
+    position: relative;
+    margin: 16px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    top: 0;
+    width: 380px;
+    height: 380px;
+    margin-bottom: 50px;
+    padding: 10px;
+
+    left: 0;
+    border: 2px goldenrod solid;
+    margin-bottom: 150px;
+    border-radius: 20px;
+
+    right: 0;
+    top: 100px;
+
+    justify-content: center;
+  }
+
+  .eduel2 h1 {
+    font-size: 25px;
+  }
+
+  .eduel2 h2 {
+    font-size: 14px;
+    position: relative;
+    top: 1px;
+  }
+
+  .eduel2 h3 {
+    width: 130px;
+    top: -230px;
+    left: 230px;
+    font-size: 12px;
+  }
+
+  .Expgrid {
+    display: grid;
+    top: 100px;
+    position: relative;
+    grid-template-columns: auto;
+  }
+
+  .expel {
+    position: relative;
+    width: 350px;
+    top: -150px;
+  }
+
+  .expel img {
+    position: relative;
+
+    left: -40px;
+  }
+
+  .skillss {
+    width: 400px;
+    font-size: 15px;
+  }
+
+  .skillel {
+    width: 360px;
+    margin: 15px;
+  }
+
+  .cert {
+    width: 400px;
+    height: 1200px;
+  }
+
+  .certel {
+    margin: 20px;
+    width: 350px;
+  }
+
+  .proel {
+    display: grid;
+    grid-template-columns: auto;
+
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    width: 310px;
+
+    border-bottom: 2px gray solid;
+  }
+
+  .proel h1 {
+    font-size: 30px;
+  }
+
+  .proel h2 {
+    font-size: 20px;
   }
 
   .hide {
