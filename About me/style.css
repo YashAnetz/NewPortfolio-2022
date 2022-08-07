@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  transition: 0.2s;
+  padding: 0;
+  scroll-behavior: smooth;
+
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+div.container {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+.header {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+
+  height: 190px;
+  background-color: rgb(41, 41, 41);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.header h1 {
+  position: relative;
+  top: 50px;
+}
+
+.header button {
+  position: relative;
+  width: 150px;
+  padding: 8px;
+  border: none;
+
+  /* border: 2px crimson solid; */
+  color: crimson;
+  font-weight: bolder;
+  top: 60px;
+  border-radius: 15px;
+  background: white;
+}
+
+.menu {
+  position: sticky;
+  display: grid;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding: 0px;
+  background-color: rgb(53, 54, 61);
+  top: -1px;
+  z-index: 100;
+  overflow: scroll;
+
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
+}
+
+.menel {
+  position: sticky;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  margin: 1px;
+
+  background-color: rgb(53, 54, 61);
+
+  color: white;
+  padding: 10px;
+  text-align: center;
+  width: 166px;
+}
+
+.menel:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.menel:focus {
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+  -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+  box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+
+.Intro {
+  display: grid;
+  grid-template-columns: auto auto;
+  animation: entry 1s;
+
+  justify-content: center;
+  margin-top: 50px;
+}
+
+@keyframes entry {
+  0% {
+    position: relative;
+    top: 300px;
+  }
+
+  100% {
+    position: relative;
+    top: 0px;
+  }
+}
+
+.introel {
+  width: 350px;
+  margin: 20px;
+
+  font-size: 10px;
+}
+
+.yash {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+
+.introel h1 button {
+  padding: 10px;
+  background: none;
+  width: 50px;
+
+  height: 50px;
+  border: none;
+}
+
+.int {
+  width: 50px;
+  height: 50px;
+}
+
+.int:hover {
+  transform: scale(1.1);
+}
+
+.hide {
+  display: none;
+}
+
+div.item {
+  display: flex;
+  flex: auto;
+  overflow-y: auto;
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+#timeline {
+  position: relative;
+  display: table;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+}
+#timeline div:after {
+  content: "";
+  width: 2px;
+  position: absolute;
+  top: 0.5rem;
+  bottom: 0rem;
+  left: 60px;
+  z-index: 1;
+  background: #c5c5c5;
+}
+
+.year h3 {
+  position: -webkit-sticky;
+  position: sticky;
+
+  top: 5rem;
+  color: #888;
+  margin: 0;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.tl {
+  animation: entry 1s;
+}
+
+#timeline h3 {
+  font-size: 1.1em;
+}
+
+#timeline section.year {
+  position: sticky;
+}
+#timeline section.year:first-child section {
+  margin-top: -1.3em;
+  padding-bottom: 0px;
+}
+#timeline section.year section {
+  position: relative;
+  padding-bottom: 1.25em;
+  margin-bottom: 2.2em;
+}
+#timeline section.year section h4 {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin: 0;
+  padding: 0 0 0 89px;
+  color: #c5c5c5;
+}
+
+#timeline section.year section h4 {
+  font-size: 1em;
+}
+
+#timeline section.year section ul {
+  list-style-type: none;
+  padding: 0 0 0 75px;
+  margin: -1.35rem 0 1em;
+  max-width: 32rem;
+  font-size: 1em;
+}
+#timeline section.year section ul {
+  font-size: 1.1em;
+  padding: 0 0 0 81px;
+}
+
+#timeline section.year section ul:last-child {
+  margin-bottom: 0;
+}
+#timeline section.year section ul:first-of-type:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #c5c5c5;
+  border: 2px solid #ffffff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 54px;
+  top: 3px;
+  z-index: 2;
+}
+#timeline section.year section ul li {
+  margin-left: 0.5rem;
+}
+#timeline section.year section ul li:before {
+  content: "·";
+  margin-left: -0.5rem;
+  padding-right: 0.3rem;
+}
+
+#timeline section.year section ul li:not(:first-child) {
+  margin-top: 0.5rem;
+}
+#timeline section.year section ul li span.price {
+  color: mediumturquoise;
+  font-weight: 500;
+}
+
+.usd {
+  display: inline;
+}
+
+svg {
+  border: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.timeline button {
+  padding: 2px;
+  width: 110px;
+  height: 20px;
+  margin-top: 10px;
+  border-radius: 20px;
+
+  z-index: 100;
+  margin: 5px;
+}
+
+#timeline {
+  z-index: 10;
+}
+
+.year img {
+  position: relative;
+  width: 100px;
+}
+
+.skill {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #e0ffcd;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  width: 240px;
+  height: 140px;
+}
+
+.skill img {
+  margin: 10px;
+}
+
+.skill h1 {
+  color: #383e44;
+}
+
+.skill h2 {
+  color: #79838c;
+  font-size: 15px;
+  width: 200px;
+}
+
+.two {
+  background-color: #e27d60;
+}
+
+.three {
+  background-color: #85dcb8;
+}
+
+.four {
+  background-color: #e8a87c;
+}
+.five {
+  background-color: #c38d9e;
+}
+.six {
+  background-color: #e7717d;
+}
+.seven {
+  background-color: #c2cad0;
+}
+.eight {
+  background-color: #c2b9b0;
+}
+
+.year .play {
+  position: relative;
+  width: 25px;
+  z-index: 100;
+  height: 25px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 10;
+  color: #383e44;
+  font-weight: bolder;
+}
+
+@media (max-width: 798px) {
+  .Intro {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .introel {
+    width: 350px;
+    margin: 20px;
+    font-size: 10px;
+  }
+
+  .yash {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  .hide {
+    display: none;
+  }
+}
