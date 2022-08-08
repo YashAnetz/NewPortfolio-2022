@@ -13,6 +13,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+.right {
+  display: none;
+}
+
 div.container {
   display: flex;
   flex: auto;
@@ -48,16 +52,53 @@ div.container {
 
 .header button {
   position: relative;
-  width: 150px;
+  width: 120px;
   padding: 8px;
+  height: 35px;
+
   border: none;
 
   /* border: 2px crimson solid; */
   color: crimson;
   font-weight: bolder;
+  margin: 10px;
+  text-align: center;
+  justify-content: center;
   top: 60px;
   border-radius: 15px;
   background: white;
+}
+
+.header button:hover {
+  transform: scale(1.1);
+  background: none;
+  border-bottom: crimson 2px solid;
+  border-left: crimson 2px solid;
+}
+
+.header button:hover img {
+  background: none;
+}
+
+.header img {
+  background-color: crimson;
+  width: 30px;
+  border-radius: 50%;
+  position: relative;
+  padding: 5px;
+  left: -40px;
+  top: -5px;
+}
+
+.header h2 {
+  position: relative;
+  top: -37px;
+  margin-left: 15px;
+  width: 90px;
+
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
 }
 
 .menu {
@@ -620,7 +661,56 @@ a {
   cursor: pointer;
 }
 
+.clt {
+  border-radius: 50%;
+}
+
+.hob {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  animation: entry 1s;
+  margin-bottom: 20px;
+
+  margin-top: 20px;
+}
+
+.hob img {
+  width: 48px;
+
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: crimson;
+  padding: 10px;
+}
+
+.hob h2 {
+  position: relative;
+  font-size: 18px;
+  float: left;
+  top: 10px;
+  text-align: left;
+}
+
 @media (max-width: 798px) {
+  .right {
+    width: 35px;
+    top: -40px;
+    border: none;
+    height: 35px;
+    border-radius: 50%;
+    z-index: 100;
+    display: block;
+
+    left: 90%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+
+  .right img {
+    width: 10px;
+  }
   .Intro {
     display: grid;
     grid-template-columns: auto;
@@ -645,12 +735,14 @@ a {
 
   .eduel1 {
     position: relative;
-    margin: 16px;
+
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     top: 0;
-    width: 380px;
+    width: 360px;
     height: 380px;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 40px;
     padding: 10px;
 
@@ -677,23 +769,24 @@ a {
   .eduel1 h3 {
     width: 130px;
     top: -210px;
-    left: 230px;
+    left: 210px;
     font-size: 12px;
   }
   .eduel2 {
     position: relative;
-    margin: 16px;
+
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     top: 0;
-    width: 380px;
+    width: 360px;
     height: 380px;
-    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
     padding: 10px;
 
     left: 0;
     border: 2px goldenrod solid;
-    margin-bottom: 150px;
     border-radius: 20px;
 
     right: 0;
@@ -715,7 +808,7 @@ a {
   .eduel2 h3 {
     width: 130px;
     top: -230px;
-    left: 230px;
+    left: 210px;
     font-size: 12px;
   }
 
@@ -758,19 +851,34 @@ a {
     width: 350px;
   }
 
+  .pro {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+
+    text-align: center;
+    margin: 0;
+    width: 100%;
+  }
+
   .proel {
     display: grid;
     grid-template-columns: auto;
 
-    margin-right: 10px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: auto;
-    padding: 10px;
-    width: 310px;
+
+    width: 100%;
 
     border-bottom: 2px gray solid;
+    transition: 0.2s;
+  }
+
+  .proel:hover {
+    border-bottom: 4px crimson solid;
   }
 
   .proel h1 {
