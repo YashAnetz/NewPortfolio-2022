@@ -8,12 +8,16 @@
     <title>About me</title>
   </head>
   <body>
+    
     <div class="header">
       <h1>About Me</h1>
-      <button>Home</button>
-      <button>Download Resume</button>
+      <button class="home" onclick="location.href='https://yashahire.netlify.app/'"><img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/home.png"/><h2>Home</h2></button>
+      <button class="dnld" onclick="window.open('res.pdf')"> <img src="https://img.icons8.com/material-outlined/24/FFFFFF/download--v1.png"/><h2>Resume</h2></button>
  
     </div>
+
+
+    
 
     <div class="menu">
       <div class="menel introbutton" tabindex="1" autofocus>Intro</div>
@@ -23,9 +27,16 @@
       <div class="menel skillbutton" tabindex="1">Skills</div>
  
       <div class="menel certbutton" tabindex="1">Certifications</div>
-      <div class="menel probutton" tabindex="1">Projects</div>
-      <div class="menel" tabindex="1">Hobbies</div>
+      <div class="menel probutton" tabindex="1" >Projects</div>
+      <div class="menel hobbutton" tabindex="1" id="hob">Hobbies</div>
     </div>
+
+   
+
+    <a href="#hob"> <button class="right"><img src="https://img.icons8.com/fluency-systems-filled/48/FFFFFF/chevron-right--v2.png"/></button></a>
+
+
+        
 
     <div class="Intro">
       <div class="introel"><img class="yash" src="/Images/about.jpg" /></div>
@@ -35,11 +46,12 @@
           have completed my undergraduate degree (B.e) in Computer Engneering I
           like develop applications . My favorite programming language is
           Javascript and Python. I also like game development with Unity 3d .
-          <button>
+          <button onclick="location.href='https://www.linkedin.com/in/yahire'">
             <img    class="int" src="https://img.icons8.com/color/48/000000/linkedin-circled--v1.png"/>
           </button>
-          <button>
-            <img  class="int" src="https://img.icons8.com/ios-glyphs/30/228BE6/github.png"/>          <button>
+          <button onclick="location.href='https://github.com/YashAnetz'">
+            <img  class="int" src="https://img.icons8.com/ios-glyphs/30/228BE6/github.png"/></button>
+            <button onclick="location.href='https://yashahire.netlify.app/'">
             <img
               class="int"
               src="https://img.icons8.com/ios/50/000000/right--v1.png"
@@ -52,15 +64,54 @@
 
 
 
+
+
+
+
     <div class="tl hide">
 
             <div class="item">
         <div id="timeline">
           <div>
+
+
+            
+            <section></section>
+
+
+
+
+
             <section class="year">
               <h3>2022</h3>
+
+              <section>
+
+                <h4>August</h4>
+
+               
+                <ul>
+             
+                  <img class="clt" src="/Images/charlotte.png" />
+                  <li>
+                 
+                   Enrolled for Masters in Computer Science at University of North Carolina , Charlotte 
+                  </li>
+                </ul>
+          
+              
+              </section>
+
+
+
+
+
+
+
+
               <section>
                 <ul>
+               
                   <img src="about/react.png" />
                   <li>Started Learning : React Js</li>
                   <li>
@@ -76,6 +127,9 @@
 
             <section class="year">
               <h3>2021</h3>
+
+
+              
               <section>
                 <h4>November</h4>
                 <ul>
@@ -89,6 +143,9 @@
                   </li>
                 </ul>
               </section>
+
+
+
               <section>
                 <h4>August</h4>
                 <ul>
@@ -881,6 +938,40 @@
       
     
       </div>
+
+<div class="hobby hide">
+      <div class="hob">
+        <div class="hobel"><img src="https://img.icons8.com/ios-filled/100/000000/reading.png"/></div>
+        <div class="hobel"><h2>Reading</h2></div>
+
+      </div>
+
+      <div class="hob">
+        <div class="hobel"><img src="https://img.icons8.com/ios-filled/50/000000/unity.png"/></div>
+        <div class="hobel"><h2>Game Development</h2></div>
+
+      </div>
+
+      <div class="hob">
+        <div class="hobel"><img src="https://img.icons8.com/color/48/000000/filmora.png"/></div>
+        <div class="hobel"><h2>Video Editing</h2></div>
+
+      </div>
+
+      <div class="hob">
+        <div class="hobel"><img src="https://img.icons8.com/ios-filled/50/000000/youtube-play.png"/></div>
+        <div class="hobel"><h2>Youtube Content Creation</h2></div>
+
+      </div>
+
+      <div class="hob">
+        <div class="hobel"><img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/></div>
+        <div class="hobel"><h2>Web Development</h2></div>
+
+      </div>
+
+
+    </div>
 
                  
       
