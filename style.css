@@ -1006,18 +1006,8 @@ svg {
   width: 100%;
 
   position: fixed;
-  animation: loader 0.5s;
+
   z-index: 2000;
-}
-
-@keyframes loader {
-  0% {
-    background-size: 50%;
-  }
-
-  100% {
-    background-size: 10%;
-  }
 }
 
 .gitmid {
