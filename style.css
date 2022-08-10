@@ -491,7 +491,7 @@ body {
   height: 100%;
 
   transition: 0.5s;
-  top: 200%;
+  top: 140%;
 
   left: 0;
 
@@ -798,7 +798,7 @@ svg {
   height: 100%;
 
   transition: 0.5s;
-  top: 200%;
+  top: 155%;
 
   left: 0;
 
@@ -2389,6 +2389,10 @@ svg {
     border-top: 2px rgba(255, 255, 255, 0.079) solid;
   }
 
+  .skills {
+    top: 200%;
+  }
+
   .footerg1 {
     position: relative;
 
@@ -2471,7 +2475,7 @@ svg {
 
   .work-header {
     position: relative;
-    top: 280px;
+    top: 250px;
   }
 
   .pronav {
@@ -2495,5 +2499,9 @@ svg {
     border: none;
     margin: 9px;
     width: 100px;
+  }
+
+  .projects {
+    top: 200%;
   }
 }
