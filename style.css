@@ -2475,10 +2475,9 @@ svg {
 
   .work-header {
     position: relative;
-    top: 200px;
+    top: 220px;
   }
-g
-  .pronav {
+  g .pronav {
     position: relative;
     top: 200px;
     border-radius: 20px;
