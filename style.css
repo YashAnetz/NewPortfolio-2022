@@ -798,14 +798,14 @@ svg {
   height: 100%;
 
   transition: 0.5s;
-  top: 150%;
+  top: 180%;
 
   left: 0;
 
   bottom: 0;
 
   /* Set a specific height */
-  min-height: 860px;
+  min-height: 900px;
 
   /* Create the parallax scrolling effect */
   /* background-attachment: fixed;
