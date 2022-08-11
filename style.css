@@ -571,7 +571,7 @@ svg {
   left: 0;
   bottom: 0;
   /* Set a specific height */
-  min-height: 860px;
+  min-height: 900px;
   /* Create the parallax scrolling effect */
   /* background-attachment: fixed;
   background-position: center;
@@ -1579,7 +1579,7 @@ svg {
     display: grid;
     transition: 0.2s;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-    top: 250px;
+    top: 180px;
     height: 600px;
   }
   .gridwd {
