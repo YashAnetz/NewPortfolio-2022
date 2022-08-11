@@ -1772,9 +1772,11 @@ svg {
     position: relative;
     top: -60px;
   }
-  .head {
-    display: none;
+
+  .yotubesection1 .head {
+    top: 100px;
   }
+
   .footer {
     position: absolute;
     width: 100%;
