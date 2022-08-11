@@ -1317,6 +1317,7 @@ svg {
   top: 30px;
 }
 .quick h1:hover {
+  
   color: #3ddc84;
   cursor: pointer;
 }
@@ -1774,7 +1775,7 @@ svg {
   }
 
   .yotubesection1 .head {
-    top: 0px;
+    top: -100px;
   }
 
   .footer {
@@ -1782,7 +1783,7 @@ svg {
     width: 100%;
     height: 70%;
     transition: 0.5s;
-    top: 900%;
+    top: 1100%;
     backdrop-filter: blur(5px);
     left: 0;
     bottom: 0;
