@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 * {
   margin: 0;
   transition: 0.2s;
@@ -11,30 +12,40 @@
   font-family: "Poppins", sans-serif;
 }
 
-.headlogo {
-  width: 20px;
+.yotubesection1 .head {
+  position: relative;
+  top: 15px;
+  z-index: 200;
+
+  background-attachment: fixed;
+  background-position: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-size: 2rem;
+  color: #f4ebea;
 }
+
+.headlogo {
+  width: 30px;
+  margin: 5px;
+  height: 30px;
+}
+
 #fbs {
   width: 10px;
 }
+
 a {
   text-decoration: none;
   color: navajowhite;
 }
+
 body {
+  background-color: #3c3b3e;
   cursor: url(https://img.icons8.com/external-color-for-better-life-royyan-wijaya/64/000000/external-cursor-user-interface-color-for-better-life-royyan-wijaya.png),
     auto;
-  animation: cursor 0.5s;
-}
-
-@keyframes cursor {
-  0% {
-    transform: scale(5);
-  }
-
-  100% {
-    transform: scale(1);
-  }
 }
 
 .twitter-share-button img {
@@ -45,6 +56,7 @@ body {
   border-radius: 3px;
   top: 5px;
 }
+
 .sharein {
   width: 26px;
   background-color: white;
@@ -54,6 +66,7 @@ body {
   border-radius: 3px;
   top: 5px;
 }
+
 .linkc {
   position: relative;
   top: -3px;
@@ -64,9 +77,11 @@ body {
   width: 26px;
   height: 26px;
 }
+
 .linkc img {
   width: 15px;
 }
+
 .showcase {
   position: absolute;
   transition: 0.5s;
@@ -77,10 +92,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(41, 41, 41);
+  background-color: #4b8bbe;
   color: white;
   z-index: 2;
 }
+
 .showcase header {
   position: absolute;
   top: 0;
@@ -92,12 +108,12 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
 .toggle {
   position: relative;
   width: 60px;
   z-index: 2;
   height: 60px;
-  background: url(https://img.icons8.com/external-inkubators-glyph-inkubators/25/000000/external-menu-email-inkubators-glyph-inkubators.png);
 
   /* background: url(https://img.icons8.com/external-inkubators-glyph-inkubators/25/000000/external-menu-email-inkubators-glyph-inkubators.png); */
   background: url(/gifd/sphs.gif);
@@ -106,31 +122,37 @@ body {
   background-position: center;
   background-color: rgb(246, 246, 246);
 
-  animation: changeLetter 2s linear 1;
   border-radius: 50%;
   cursor: pointer;
 }
+
 @keyframes changeLetter {
   0% {
     background: url(/Images/logoimg.png);
   }
+
   100% {
     background: url(/Images/menu.png);
   }
 }
+
 .toggle.active {
   background: url(/Images/close.png);
   background-repeat: no-repeat;
   background-size: 30px;
   left: -160px;
+
   background-position: center;
 }
+
 .logo {
   text-transform: uppercase;
   width: 20px;
   font-size: 2em;
+  z-index: 10;
   font-family: "Press Start 2P", cursive;
 }
+
 .showcase video {
   position: absolute;
   top: 0;
@@ -138,32 +160,111 @@ body {
   width: 100%;
   height: 100%;
   filter: blur(2px);
+
   object-fit: cover;
   opacity: 0.8;
 }
+
 .text {
   position: relative;
   z-index: 10;
 }
+
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   background-color: rgba(123, 123, 123, 0.5);
+
   height: 100%;
 }
+
 .text h2 {
   font-size: 2em;
 }
+
 .text h3 {
   font-size: 20vmin;
   cursor: crosshair;
   z-index: 100;
-  font-weight: 1800;
+
   font-family: "Nova Square", cursive;
+
   color: crimson;
 }
+
+.text h3:hover {
+  animation: bounce 1s ease alternate;
+}
+
+@keyframes bounce {
+  100% {
+    position: relative;
+    text-shadow: 0 1px 0 rgb(138, 71, 71), 0 2px 0 rgb(211, 62, 62),
+      0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 transparent,
+      0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent,
+      0 10px 10px rgba(0, 0, 0, 0.4);
+    font-weight: 1800;
+    top: -20px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+      0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+      0 50px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes yas {
+  0% {
+    background: -webkit-linear-gradient(
+      60deg,
+      crimson 20%,
+      rgba(205, 65, 84, 0.8) 40%
+    );
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+  }
+  20% {
+    background: -webkit-linear-gradient(
+      60deg,
+      rgb(45, 200, 86) 40%,
+      rgba(0, 0, 255, 0) 20%
+    );
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+  }
+
+  60% {
+    background: -webkit-linear-gradient(
+      60deg,
+      rgb(48, 192, 180) 60%,
+      rgba(0, 0, 255, 0) 20%
+    );
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+  }
+
+  80% {
+    background: -webkit-linear-gradient(
+      60deg,
+      crimson 80%,
+      rgba(0, 0, 255, 0) 20%
+    );
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+  }
+
+  100% {
+    background: -webkit-linear-gradient(60deg, rgba(0, 0, 255, 0) 20%);
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+  }
+}
+
 .text p {
   background-color: rgba(0, 0, 0, 0);
   max-width: 700px;
@@ -171,6 +272,7 @@ body {
   margin: 5px;
   border-radius: 20px;
 }
+
 .text a {
   display: inline-block;
   font-size: 1em;
@@ -181,10 +283,34 @@ body {
   text-decoration: none;
   border-radius: 20px;
 }
+
 .text a:hover {
-  background: none;
   border: 2px crimson solid;
+  animation: abtb 1s linear forwards;
 }
+
+@keyframes abtb {
+  0% {
+    background: linear-gradient(60deg, crimson 20%, rgba(198, 87, 100, 0) 20%);
+  }
+  20% {
+    background: linear-gradient(90deg, crimson 40%, rgba(0, 0, 255, 0) 20%);
+  }
+
+  60% {
+    background: linear-gradient(80deg, crimson 60%, rgba(0, 0, 255, 0) 20%);
+  }
+
+  80% {
+    background: linear-gradient(120deg, crimson 80%, rgba(0, 0, 255, 0) 20%);
+  }
+
+  100% {
+    color: white;
+    background: linear-gradient(60deg, crimson 100%, rgba(0, 0, 255, 0) 20%);
+  }
+}
+
 .social {
   position: absolute;
   bottom: 20px;
@@ -192,19 +318,24 @@ body {
   display: flex;
   z-index: 10;
 }
+
 .social li {
   list-style: none;
 }
+
 .social li a {
   display: inline-block;
   margin-right: 10px;
   background-color: white;
+
   border-radius: 50%;
   width: 3em;
   height: 3em;
+
   text-align: center;
   padding: 10px;
 }
+
 .fb:hover {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
@@ -218,6 +349,7 @@ body {
   transition: 0.5s;
   background-size: 200% auto;
 }
+
 .git:hover {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
@@ -228,9 +360,11 @@ body {
     #e7e9bb 51%,
     #403b4a 100%
   );
+
   transition: 0.5s;
   background-size: 200% auto;
 }
+
 .yt {
   background-image: linear-gradient(
     to right,
@@ -238,14 +372,17 @@ body {
     #e65245 51%,
     #e43a15 100%
   );
+
   transition: 0.5s;
   background-size: 200% auto;
 }
+
 .yt:hover {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
 }
+
 .social .scr {
   border-radius: 20px;
   width: 100px;
@@ -258,8 +395,10 @@ body {
   border-bottom: 5px black solid;
   border-bottom-width: 10px;
   font-size: 1em;
+
   padding: 5px;
 }
+
 @keyframes press {
   0% {
     height: 44px;
@@ -267,12 +406,15 @@ body {
     top: 5px;
     border: none;
   }
+
   100% {
     height: 50px;
     border-bottom: 5px rgb(26, 26, 26) solid;
+
     border-bottom-width: 10px;
   }
 }
+
 .social .scr:hover {
   animation: press 0.5s infinite;
   /* height: 44px;
@@ -280,64 +422,84 @@ body {
   top: 5px;
   border: none; */
 }
+
 .social .scr img {
   margin: 0px;
+
   padding: 0px;
   float: left;
 }
+
 .menu {
   position: relative;
+
   display: grid;
   border-radius: 50%;
   width: 0px;
   transition: 1s;
   height: auto;
+
   top: 50px;
+
   transition: 0.5s;
 }
+
 .menu.active {
   position: absolute;
   top: 0;
   z-index: 10;
   background-color: white;
   right: 70px;
+
   width: 190px;
   text-align: center;
   justify-content: center;
   align-items: center;
   transition: 0.5s;
   height: 40%;
+
   border-radius: 10px;
   margin: 10px;
+
   display: flex;
   justify-content: center;
 }
+
 .menu ul {
   list-style: none;
   margin: 10px;
 }
+
 .menu ul li a {
   text-decoration: none;
   color: #2c2b2d;
   font-size: 24px;
 }
+
 .menu ul li a:hover {
   border-bottom: 5px crimson solid;
   color: crimson;
 }
+
 .typed-cursor {
   color: crimson;
 }
+
 .skills {
   position: absolute;
   width: 100%;
   height: 100%;
+
   transition: 0.5s;
-  top: 150%;
+  top: 140%;
+
   left: 0;
+
   bottom: 0;
+
   /* Set a specific height */
   min-height: 860px;
+
   /* Create the parallax scrolling effect */
   /* background-attachment: fixed;
   background-position: center;
@@ -347,8 +509,10 @@ body {
   right: 0;
   margin: auto;
   color: #e1e1e1;
+
   background-color: #2c2b2d;
 }
+
 .grid {
   display: grid;
   position: relative;
@@ -356,19 +520,35 @@ body {
   grid-template-columns: auto auto auto;
   margin: 10px;
   justify-content: center;
+
   top: 180px;
+
   z-index: 1;
+}
+
+@keyframes up {
+  0% {
+    top: -600px;
+    display: none;
+  }
+
+  100% {
+    top: 0px;
+  }
 }
 
 .gridel {
   position: relative;
+
   margin: 15px;
   animation: up 0.5s;
   margin-bottom: 100px;
+
   justify-content: center;
   width: 200px;
   height: 200px;
 }
+
 .outer {
   height: 180px;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
@@ -377,8 +557,10 @@ body {
   padding: 30px;
   border-radius: 50%;
 }
+
 .inner {
   height: 120px;
+
   border-radius: 50%;
   width: 120px;
   box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
@@ -390,11 +572,14 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+
   width: 100%;
   z-index: -10;
   background-color: rgba(65, 65, 65, 0.93);
+
   height: 100%;
 }
+
 #number {
   font-weight: 600px;
   position: relative;
@@ -402,82 +587,102 @@ body {
   top: 50px;
   color: #ffffff;
 }
+
 circle {
   fill: none;
+
   stroke-width: 25px;
   cx: 90;
+
   cy: 90;
   r: 77;
   animation: anim 1s linear forwards;
 }
+
 @keyframes anim {
   100% {
     stroke-dashoffset: 0;
   }
 }
+
 svg {
   position: absolute;
   top: 0;
+
   left: 0;
 }
+
 .c1 {
   stroke-dasharray: 405;
   stroke-dashoffset: 405;
   stroke: url(#GradientColor1);
 }
+
 .c2 {
   stroke-dasharray: 405;
   stroke-dashoffset: 405;
   stroke: url(#GradientColor2);
 }
+
 .c3 {
   stroke-dasharray: 337.5;
   stroke-dashoffset: 337.55;
   /* stroke-dashoffset: 100; */
   stroke: url(#GradientColor3);
 }
+
 .c4 {
   stroke-dasharray: 292.5;
   stroke-dashoffset: 292.5;
   /* stroke-dashoffset: 100; */
   stroke: url(#GradientColor4);
 }
+
 .c5 {
   stroke-dasharray: 225;
   stroke-dashoffset: 225;
   /* stroke-dashoffset: 100; */
   stroke: url(#GradientColor5);
 }
+
 .c6 {
   stroke-dasharray: 337.5;
   stroke-dashoffset: 337.55;
   /* stroke-dashoffset: 100; */
   stroke: url(#GradientColor6);
 }
+
 .skilllabel {
   text-align: center;
   margin-top: 5px;
 }
+
 .skill-header {
   position: relative;
   z-index: 500;
   top: 170px;
+
   background-attachment: fixed;
   background-position: center;
+
   background-repeat: no-repeat;
   background-size: cover;
+
   text-align: center;
   font-size: 2rem;
   color: #ffffff;
 }
+
 .skills-more {
   border-radius: 20px;
+
   text-decoration: none;
   margin: 0;
   position: relative;
   z-index: 20;
   margin-right: 5px;
   left: 40px;
+
   transition: 0.1s;
   font-weight: 600;
   color: #efeafa;
@@ -497,10 +702,12 @@ svg {
     #4776e6
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 .skills-more:hover {
   transform: scale(1.2);
   animation: press 0.5s infinite;
 }
+
 @keyframes presss {
   0% {
     height: 44px;
@@ -508,14 +715,18 @@ svg {
     top: 5px;
     border: none;
   }
+
   100% {
     height: 50px;
     border-bottom: 5px rgb(232, 232, 232) solid;
+
     border-bottom-width: 10px;
   }
 }
+
 .topro {
   border-radius: 20px;
+
   text-decoration: none;
   margin: 0;
   position: relative;
@@ -523,6 +734,7 @@ svg {
   width: 100px;
   z-index: 20;
   padding: 10px;
+
   transition: 0.1s;
   font-weight: 600;
   color: #403b4a;
@@ -531,43 +743,70 @@ svg {
   font-size: 1em;
   background-color: white;
 }
+
 .topro:hover {
   animation: press 0.5s infinite;
 }
+
 .topro img {
   margin: 0px;
+
   position: relative;
   top: 10px;
 }
+
 .BeforeScroll {
   height: 100px; /*Whatever you want*/
   width: 100%; /*Whatever you want*/
+
   display: none;
 }
+
 /*Use this class when you want your content to be shown after some scroll*/
 .AfterScroll {
   display: auto;
 }
+
 .page2-buttons {
   position: relative;
   top: 60px;
 }
+
 .logoimg {
   width: 100px;
   margin-right: 10px;
+  border: 2px rgba(0, 0, 0, 0) solid;
+
+  background-size: 100%;
+  background-repeat: no-repeat;
   height: 100px;
 }
+
+.logoimg:hover {
+  transform: scale(1.1);
+  background-color: #323132;
+
+  padding: 20px;
+
+  border-radius: 20%;
+}
+
 .projects {
   position: absolute;
   width: 100%;
   background-color: #2c2b2d;
   height: 100%;
+
   transition: 0.5s;
-  top: 150%;
+  top: 155%;
+
   left: 0;
+
   bottom: 0;
+
   /* Set a specific height */
-  min-height: 950px;
+  min-height: 900px;
+
   /* Create the parallax scrolling effect */
   /* background-attachment: fixed;
   background-position: center;
@@ -578,6 +817,7 @@ svg {
   margin: auto;
   color: #e1e1e1;
 }
+
 .grid1 {
   display: grid;
   position: relative;
@@ -587,115 +827,190 @@ svg {
   justify-content: center;
   align-items: center;
   text-align: center;
-  top: 190px;
+
+  top: 100px;
+
   z-index: 1;
+}
+
+@keyframes up {
+  0% {
+    top: -600px;
+    display: none;
+  }
+
+  100% {
+    top: 0px;
+  }
 }
 
 .gridel1 {
   position: relative;
+
   margin: 15px;
   background: none;
   border: 2px white solid;
+
   border-radius: 5px;
   padding: 10px;
+
   animation: up 0.5s;
   font-size: 18px;
   margin-bottom: 100px;
+
   justify-content: center;
   width: 150px;
   text-align: center;
+
   height: 70px;
 }
+
 .gridel1 img {
   position: relative;
   top: 10px;
   left: -5px;
 }
+
 .we:hover {
   background-color: #e65245;
 }
+
 .js:hover {
   background-color: #f0db4f;
 }
+
 .an:hover {
   background-color: #3ddc84;
 }
+
 .py:hover {
   background-color: #4b8bbe;
 }
+
 .ga:hover {
   background-color: cornflowerblue;
 }
+
 .gridel1:hover img {
   filter: brightness(50%);
 }
+
 .gridel1:hover {
   color: #403b4a;
   transform: scale(1.1);
   border: none;
 }
+
 .gridel1:focus {
   background-color: #585856;
   color: #d5eadf;
+
   border: none;
   transform: scale(1.1);
 }
+
 .work-header {
   position: relative;
-  top: 200px;
+  top: 180px;
   z-index: 20;
+
   background-attachment: fixed;
   background-position: center;
+
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   font-size: 2rem;
   color: #f4ebea;
 }
+
 .grid1projects {
   position: relative;
   overflow-x: scroll;
-  animation: up 1s;
   overflow-y: hidden;
   box-sizing: content-box; /* So the width will be 100% + 17px */
   margin-top: 10px;
   display: grid;
+
+  animation: procards 0.5s;
   transition: 0.2s;
   grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-  top: 80px;
+  top: -100px;
   height: 500px;
+}
+
+.pronav {
+  position: relative;
+  top: -40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.267);
+  margin: auto;
+
+  width: 370px;
+}
+
+.pronav button {
+  padding: 10px;
+  background: none;
+  font-size: 30px;
+  color: white;
+  border: none;
+  margin: 9px;
+  width: 100px;
 }
 
 .gridwd {
   background: none;
-  height: 399px;
+  height: 259px;
+  position: relative;
+  top: 200px;
   margin: 14px;
-  filter: blur(2);
-  border-radius: 20px;
-  animation: procards 10s;
   width: 299px;
+
+  filter: blur(2);
+
+  border-radius: 20px;
+  animation: procards 1s;
+}
+
+@keyframes procards {
+  0% {
+    top: 300px;
+  }
+  100% {
+    top: 120px;
+  }
 }
 
 .cardimg {
   border-radius: 20px;
-  filter: blur(0.9px);
-  width: 299px;
-  height: 399px;
+  filter: blur(0px);
+  width: 260px;
+  height: 200px;
+
+  margin: 10px;
+
   z-index: -1;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .gridwd:hover {
   transform: scale(1.05);
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
+
 .cardlogo {
   position: relative;
   height: 60px;
   width: 60px;
   display: block;
-  top: -5em;
+  top: -2.5em;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 10px;
   border-radius: 50%;
@@ -703,37 +1018,46 @@ svg {
   background-color: #3ddc84;
   left: 15px;
 }
+
 .cardoverlay {
   position: relative;
   background-color: rgba(0, 0, 0, 0.05);
   background-image: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.2),
+    rgba(125, 120, 120, 0.323),
     rgba(7, 7, 7, 1)
   );
-  top: -29.1em;
+
+  top: -17.8em;
+
   width: 299px;
   border-radius: 20px;
-  height: 399px;
+  height: 259px;
   z-index: 1;
 }
+
 .cardoverlay:hover .cardhover {
   display: block;
 }
+
 .cardoverlay:hover .cardhover2 {
   display: block;
 }
+
 .cardoverlay:hover .cardhover3 {
   display: block;
 }
+
 .cardoverlay:hover .cardhover4 {
   display: block;
 }
+
 .cardoverlay:hover .cardheading {
   position: relative;
-  top: 50px;
+  top: 20px;
   left: 20px;
 }
+
 @keyframes viewcardinfo {
   0% {
     width: 0px;
@@ -744,75 +1068,113 @@ svg {
     height: inherit;
   }
 }
+
 .cardhover {
   animation: viewcardinfo 0.2s;
   position: relative;
   display: none;
-  background-color: rgba(61, 220, 132, 0.7);
+  background-color: #8e54e9;
   z-index: 100;
-  top: -2.5em;
+
+  top: -2.3em;
+
   width: 299px;
   border-radius: 20px;
-  height: 399px;
+  height: 259px;
 }
+
 .cardhover2 {
   animation: viewcardinfo 0.2s;
   position: relative;
   display: none;
-  background-color: #4776e6;
+  background-color: coral;
   z-index: 100;
-  top: -2.5em;
+
+  top: -2.3em;
+
   width: 299px;
   border-radius: 20px;
-  height: 399px;
+  height: 259px;
 }
+
 .cardhover3 {
-  transition: 0.2s;
   animation: viewcardinfo 0.2s;
   position: relative;
   display: none;
+  background-color: #77a1d3;
   z-index: 100;
-  top: -2.5em;
+
+  top: -2.3em;
+
   width: 299px;
   border-radius: 20px;
-  height: 399px;
-  background-color: #8e54e9;
+  height: 259px;
 }
+
 .cardhover4 {
-  transition: 0.2s;
   animation: viewcardinfo 0.2s;
   position: relative;
   display: none;
+  background-color: rgb(61, 220, 132);
   z-index: 100;
-  top: -2.4em;
+
+  top: -2.3em;
+
   width: 299px;
   border-radius: 20px;
-  height: 399px;
-  background-color: #e43a15;
+  height: 259px;
 }
+
 .cardheading {
   position: relative;
   font-family: "Press Start 2P", cursive;
   width: 200px;
-  top: 340px;
+  top: 200px;
+
   left: 100px;
   z-index: 129;
   font-size: 1.2rem;
 }
+
 .hide {
   display: none;
 }
+
 #preloader {
-  background: #000 url(/gifd/loading.gif) no-repeat center center;
+  background: rgba(29, 36, 48, 255) url(/gifd/loading.gif) no-repeat center
+    center;
   height: 100vh;
   background-size: 10%;
   width: 100%;
   position: fixed;
   z-index: 2000;
 }
+#preloader1 {
+  background: rgba(29, 36, 48, 255) url(/gifd/load1.gif) no-repeat center center;
+  height: 100vh;
+  background-size: 10%;
+  display: none;
+
+  width: 100%;
+
+  position: fixed;
+  animation: loader 0.5s;
+  z-index: 2000;
+}
+
+@keyframes loader {
+  0% {
+    background-size: 50%;
+  }
+
+  100% {
+    background-size: 10%;
+  }
+}
+
 .gitmid {
   position: absolute;
-  top: 325px;
+  top: 184px;
   display: flex;
   left: 150px;
   z-index: 0;
@@ -824,9 +1186,10 @@ svg {
   background-color: #4776e6;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .nextmid {
   position: absolute;
-  top: 325px;
+  top: 184px;
   display: flex;
   left: 220px;
   animation: buttons 0.2s;
@@ -834,37 +1197,49 @@ svg {
   width: 60px;
   height: 60px;
   padding: 10px;
+
   border-radius: 50%;
   background-color: #4776e6;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .cardtext {
   position: relative;
-  top: 100px;
+  top: 60px;
+  font-size: 12px;
   left: 20px;
-  width: 250px;
+  width: 260px;
+  height: 50px;
 }
+
 @keyframes buttons {
   0% {
     height: 0px;
     padding: 0px;
     width: 0px;
   }
+
   100% {
     height: 60px;
     width: 60px;
   }
 }
+
 .youtubesectionandcontact {
   position: absolute;
   width: 100%;
   height: 120%;
+
   transition: 0.5s;
-  top: 260%;
+  top: 264%;
+
   left: 0;
+
   bottom: 0;
+
   /* Set a specific height */
   min-height: 100px;
+
   /* Create the parallax scrolling effect */
   /* background-attachment: fixed;
   background-position: center;
@@ -874,8 +1249,9 @@ svg {
   right: 0;
   margin: auto;
   color: #e1e1e1;
-  background-color: #3c3b3e;
+  background-color: #2c2b2d;
 }
+
 .lastgrid {
   position: relative;
   overflow-x: scroll;
@@ -885,9 +1261,10 @@ svg {
   animation: procards 0.5s;
   transition: 0.2s;
   grid-template-columns: auto;
-  top: 50px;
+  top: 0px;
   height: 450px;
 }
+
 .gridyoutube {
   position: relative;
   overflow-x: scroll;
@@ -895,22 +1272,30 @@ svg {
   margin-top: 10px;
   display: grid;
   overflow: hidden;
+
   animation: procards 0.5s;
   transition: 0.2s;
+
   background-attachment: fixed;
   background-position: center;
+
   background-repeat: no-repeat;
   background-size: cover;
+
   grid-template-columns: auto auto;
-  top: -0px;
+  top: 0px;
   justify-content: center;
   height: 300px;
 }
+
 .youtubeel {
   position: relative;
+
   background: none;
+
   width: 400px;
 }
+
 .y1 {
   position: relative;
   border-top-left-radius: 20px;
@@ -918,15 +1303,18 @@ svg {
   left: -10px;
   border-bottom-left-radius: 20px;
 }
+
 .y2 {
   position: relative;
   border-top-right-radius: 20px;
   width: 40em;
+
   margin: 5px;
   height: 18em;
   left: 200px;
   border-bottom-right-radius: 20px;
 }
+
 .youtubevid {
   width: 560px;
   border-radius: 20px;
@@ -934,12 +1322,15 @@ svg {
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   height: 255px;
 }
+
 .stats {
   position: relative;
   display: flex;
   color: #2c2b2d;
+
   margin: 10px;
 }
+
 .stats h2 {
   font-size: 15px;
   background-color: #8e54e9;
@@ -950,6 +1341,7 @@ svg {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   margin: 10px;
 }
+
 .stats h3 {
   font-size: 15px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -960,76 +1352,95 @@ svg {
   border-radius: 10px;
   margin: 10px;
 }
+
 .y2 img {
   position: relative;
+
   width: 30em;
   left: 20px;
   margin: 10px;
 }
+
 .y2 h1 {
   position: relative;
   margin: 1;
   left: 30px;
   width: 500px;
 }
+
 .y2 .visityt {
   position: relative;
   padding: 15px;
   color: rgb(255, 250, 251);
   border: 2px white dotted;
+
   background: none;
   text-align: center;
   width: 100px;
   font-family: "Press Start 2P", cursive;
   left: 25px;
 }
+
 .visityt:hover {
   transform: scale(1.1);
   background-color: rgba(252, 109, 109, 0.09);
 }
+
 .contactgrid {
   position: relative;
   overflow-x: scroll;
   box-sizing: content-box; /* So the width will be 100% + 17px */
   margin-top: 10px;
+
   display: grid;
   overflow: hidden;
+
   animation: procards 0.5s;
   transition: 0.2s;
+
   grid-template-columns: auto auto auto auto;
-  top: 40px;
+  top: 50px;
   justify-content: center;
+
   margin: 20px;
   height: 300px;
 }
+
 .contactel {
   height: 280px;
+
   margin: 20px;
   /* box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px; */
   border-radius: 5px;
   width: 250px;
 }
+
 .contactel img {
   position: relative;
   left: 33%;
   top: 10%;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
   border-radius: 50%;
 }
+
 .email {
   border: 1px salmon solid;
 }
+
 .email img {
   background-color: #e65245;
   padding: 20px;
 }
+
 .email h1 {
   position: relative;
   top: 30px;
   left: 20px;
   font-size: 20px;
 }
+
 .email h2 {
   position: relative;
   top: 40px;
@@ -1037,23 +1448,28 @@ svg {
   left: 30px;
   font-size: 15px;
 }
+
 .socials {
   border: 2px solid #f0db4f;
 }
+
 .socials img {
   background-color: #f0db4f;
   padding: 20px;
 }
+
 .socials h1 {
   position: relative;
   top: 30px;
   left: 90px;
   font-size: 20px;
 }
+
 .socials h2 {
   position: relative;
   top: 30px;
   position: relative;
+
   color: #f0db4f;
   align-items: center;
   text-align: center;
@@ -1061,13 +1477,16 @@ svg {
   left: 0px;
   font-size: 15px;
 }
+
 .spotify {
   border: 2px slateblue solid;
 }
+
 .spotify img {
   background-color: #8e54e9;
   padding: 20px;
 }
+
 .spot {
   position: relative;
   left: -13px;
@@ -1076,26 +1495,32 @@ svg {
   height: 80px;
   margin: 5px;
 }
+
 .address {
   border: #3ddc84 2px solid;
 }
+
 .conimg {
   background-color: #3ddc84;
   padding: 20px;
 }
+
 .address h1 {
   position: relative;
   top: 30px;
   left: 70px;
   font-size: 20px;
 }
+
 #conad {
   padding: 2px;
   background-color: #3ddc84;
   left: -57px;
   top: 84px;
+
   position: relative;
 }
+
 .address h2 {
   position: relative;
   color: #3ddc84;
@@ -1103,13 +1528,16 @@ svg {
   font-size: 17px;
   top: 50px;
 }
+
 #conad1 {
   padding: 2px;
   background-color: #3ddc84;
   left: 34px;
   top: 64px;
+
   position: relative;
 }
+
 .address h3 {
   position: relative;
   color: #3ddc84;
@@ -1117,6 +1545,7 @@ svg {
   font-size: 17px;
   top: 30px;
 }
+
 .contactel .sm {
   position: relative;
   left: 75px;
@@ -1127,11 +1556,13 @@ svg {
   width: 100px;
   top: 50px;
 }
+
 .spotify h1 {
   position: relative;
   top: 25px;
   left: 58px;
 }
+
 .spotify .song {
   position: relative;
   top: 100px;
@@ -1142,13 +1573,16 @@ svg {
   height: 20px;
   border-radius: 50%;
 }
+
 .spotify h2 {
   position: relative;
   font-size: 13px;
   top: 123px;
   left: 20px;
+
   color: white;
 }
+
 .s1 {
   background-color: #3c3b3e;
 }
@@ -1158,106 +1592,137 @@ svg {
 .s3 {
   background-color: #f0db4f;
 }
+
 .s4 {
   background-color: #4b8bbe;
 }
 .s5 {
   background-color: #3ddc84;
 }
+
 .s1:hover h1 {
   background-color: red;
 }
+
 .email:hover {
   background-color: #e65245;
 }
+
 .email:hover h1 {
   color: #2c2b2d;
 }
+
 .email:hover h2 {
   color: white;
 }
+
 .email:hover .sm {
   border: 2px white solid;
 }
+
 .email:hover img {
   box-shadow: none;
 }
+
 .email .sm:hover {
   background-color: #3ddc84;
   border: none;
   transform: scale(1.1);
   cursor: pointer;
 }
+
 .socials:hover {
   background-color: #f0db4f;
 }
+
 .socials:hover h1 {
   color: #2c2b2d;
 }
+
 .socials:hover h2 {
   color: rgb(158, 146, 146);
   cursor: pointer;
 }
+
 .socials h2:hover {
   color: #3ddc84;
 }
+
 .socials:hover img {
   box-shadow: none;
 }
+
 .address:hover {
   background-color: #3ddc84;
 }
+
 .address:hover h2 {
   color: #3c3b3e;
 }
+
 .address:hover h3 {
   color: #3c3b3e;
 }
+
 .address:hover img {
   box-shadow: none;
 }
+
 .spotify:hover {
   background-color: #8e54e9;
 }
+
 .spotify:hover h1 {
   color: #2c2b2d;
 }
+
 .spotify:hover img {
   box-shadow: none;
 }
+
 .spotify:hover button {
   box-shadow: none;
   border: 1px black dotted;
 }
+
 .spotify button:hover {
   transform: scale(1.1);
 }
+
 .spot {
   animation: spot 1s;
 }
+
 .yotubesection1 .head {
   position: relative;
-  top: 30px;
-  z-index: 20;
+  top: 15px;
+  z-index: 200;
+
   background-attachment: fixed;
   background-position: center;
+
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   font-size: 2rem;
   color: #f4ebea;
 }
+
 .footer {
   position: absolute;
   width: 100%;
   height: 30%;
+
   transition: 0.5s;
-  top: 330%;
+  top: 340%;
   backdrop-filter: blur(5px);
   left: 0;
+
   bottom: 0;
+
   /* Set a specific height */
   min-height: 100px;
+
   /* Create the parallax scrolling effect */
   /* background-attachment: fixed;
   background-position: center;
@@ -1269,59 +1734,76 @@ svg {
   background-color: #2c2b2d;
   border-top: 2px rgba(255, 255, 255, 0.079) solid;
 }
+
 .footerg1 {
   position: relative;
+
   display: grid;
   overflow: hidden;
+
   animation: procards 0.5s;
   transition: 0.2s;
+
   grid-template-columns: auto auto auto auto;
   width: inherit;
   justify-content: center;
 }
+
 .f1 {
   width: 375px;
   height: 250px;
   margin: 5px;
 }
+
 .footlogo {
   width: 150px;
   position: relative;
   left: 50px;
   top: 25px;
 }
+
 .f1 {
   position: relative;
   top: 30px;
 }
+
 .quick h1:hover {
   color: #3ddc84;
+
   cursor: pointer;
 }
+
 .f1 h2 {
   color: #e65245;
 }
+
 .footerg2 {
   position: relative;
+
   top: -4px;
   height: 50px;
+
   background-color: #2c2b2d;
   border-top: 2px rgba(250, 238, 238, 0.079) solid;
 }
+
 .f1 img:hover {
   transform: scale(1.1);
 }
+
 .footerg2 h2 {
   position: relative;
   background-color: #323132;
   font-size: 15px;
   width: 150px;
   color: rgb(123, 119, 119);
+
   border: rgba(0, 0, 0, 0.267) 2px solid;
   padding: 4px;
   margin: 6px;
   text-align: center;
 }
+
 .footerg2 h1 {
   position: relative;
   color: rgb(123, 119, 119);
@@ -1329,24 +1811,29 @@ svg {
   margin: 12px;
   float: right;
 }
+
 /*;
 ████████████████████████████████████
 █▄─▀█▀─▄█─▄▄─█▄─▄─▀█▄─▄█▄─▄███▄─▄▄─█
 ██─█▄█─██─██─██─▄─▀██─███─██▀██─▄█▀█
 ▀▄▄▄▀▄▄▄▀▄▄▄▄▀▄▄▄▄▀▀▄▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀
 */
+
 @media (max-width: 798px) {
   .showcase,
   .showcase header {
     padding: 40px;
   }
+
   .page2-buttons {
     position: relative;
     top: 10px;
   }
+
   .social {
     top: 85%;
   }
+
   .menu.active {
     position: absolute;
     top: 0;
@@ -1358,45 +1845,54 @@ svg {
     height: inherit;
     border-radius: 10px;
     margin: 10px;
+
     display: flex;
     justify-content: center;
   }
+
   .menu .ctn {
     color: crimson;
   }
+
   .menu .ctn:hover {
     color: #3ddc84;
   }
+
   .menu ul li a:hover {
     border-bottom: 2px crimson solid;
     color: crimson;
   }
+
   .menu ul {
     list-style: none;
     margin: 10px;
   }
+
   .menu ul li a {
     text-decoration: none;
     color: #2c2b2d;
     font-size: 20px;
   }
+
   .menu ul li a:hover {
     color: crimson;
     letter-spacing: 2px;
   }
+
   .toggle.active {
     background: url(/Images/close.png);
     background-repeat: no-repeat;
     background-size: 30px;
     left: -120px;
+
     background-position: center;
   }
+
   .toggle {
     position: relative;
     width: 60px;
     z-index: 2;
     height: 60px;
-    background: url(https://img.icons8.com/external-inkubators-glyph-inkubators/25/000000/external-menu-email-inkubators-glyph-inkubators.png);
     background: url(/gifd/sphs.gif);
     background-repeat: no-repeat;
     background-size: 25px;
@@ -1405,41 +1901,55 @@ svg {
     border-radius: 50%;
     cursor: pointer;
   }
+
   .grid {
     display: grid;
+
     grid-template-columns: auto auto;
     margin: 5px;
     top: 100px;
+
     justify-content: center;
+
     z-index: 1;
   }
+
   .gridel {
     position: relative;
     margin-right: 50px;
     left: -10px;
     margin-bottom: 70px;
     top: 50px;
+
     justify-content: center;
     width: 100px;
     height: 100px;
   }
+
   .outer {
     height: 150px;
+
     width: 150px;
     padding: 30px;
   }
+
   .inner {
     height: 90px;
+
     width: 90px;
   }
+
   circle {
     fill: none;
     cx: 76;
     cy: 76;
     r: 59;
+
     stroke: url(#GradientColor);
+
     stroke-width: 20px;
   }
+
   #number {
     font-weight: 600px;
     position: relative;
@@ -1447,51 +1957,63 @@ svg {
     top: 33px;
     color: #ffffff;
   }
+
   .c1 {
     stroke-dasharray: 315;
     stroke-dashoffset: 315;
   }
+
   .c2 {
     stroke-dasharray: 315;
     stroke-dashoffset: 315;
   }
+
   .c3 {
     stroke-dasharray: 262.5;
     stroke-dashoffset: 262.5;
     stroke: url(#GradientColor3);
   }
+
   .c4 {
     stroke-dasharray: 227.5;
     stroke-dashoffset: 227.5;
     stroke: url(#GradientColor4);
   }
+
   .c5 {
     stroke-dasharray: 192.5;
     stroke-dashoffset: 192.5;
     stroke: url(#GradientColor5);
   }
+
   .c6 {
     stroke-dasharray: 262.5;
     stroke-dashoffset: 262.5;
     stroke: url(#GradientColor6);
   }
+
   .skilllabel {
     text-align: center;
     margin: 10px;
     position: relative;
+
     left: 25px;
     font-size: 1rem;
   }
+
   .skill-header {
     top: 140px;
+
     font-size: 30px;
   }
+
   .topro {
     position: relative;
     top: 180px;
     left: 80px;
     height: inherit;
   }
+
   .topro:hover {
     animation: pressx 0.4s infinite;
   }
@@ -1500,9 +2022,11 @@ svg {
     top: 180px;
     left: 80px;
   }
+
   .skills-more:hover {
     animation: pressx 0.4s infinite;
   }
+
   @keyframes pressx {
     0% {
       height: 40px;
@@ -1510,24 +2034,41 @@ svg {
       top: 190px;
       border: none;
     }
+
     100% {
       position: relative;
       height: 10px;
       border-bottom: 5px rgb(0, 0, 0) solid;
+
       border-bottom-width: 10px;
     }
   }
+
   .grid1 {
     display: grid;
     position: relative;
     transition: 0.5s;
     grid-template-columns: auto auto auto;
     margin: 2px;
+
     align-items: center;
     text-align: center;
-    top: 320px;
+
+    top: 190px;
     height: 10px;
+
     z-index: 1;
+  }
+
+  @keyframes up {
+    0% {
+      top: -600px;
+      display: none;
+    }
+
+    100% {
+      top: 0px;
+    }
   }
 
   .gridel1 {
@@ -1535,230 +2076,306 @@ svg {
     margin-top: -80px;
     background: none;
     border: 2px white solid;
+
     border-radius: 5px;
+
     animation: up 0.5s;
     font-size: 10px;
     margin-bottom: 100px;
+
     justify-content: space-evenly;
     width: 100px;
     text-align: center;
+
     height: 50px;
   }
+
   .gridel1 img {
     width: 20px;
     top: 5px;
     height: 20px;
   }
+
   .grid1projects {
     position: relative;
     overflow-x: scroll;
-    overflow-y: hidden;
     box-sizing: content-box; /* So the width will be 100% + 17px */
     margin-top: 10px;
     display: grid;
     transition: 0.2s;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-    top: 300px;
-    height: 600px;
+    top: 250px;
+    height: 500px;
   }
 
   .gridwd {
-    background: n;
-    height: 399px;
-    width: 299px;
+    height: 300px;
+    top: 0px;
+
+    width: 360px;
   }
+
   .gridwd img {
-    width: 299px;
+    width: 300px;
+
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    height: 399px;
+    height: 200px;
   }
+
   #preloader {
-    background: #000 url(/gifd/loading.gif) no-repeat center center;
     height: 100vh;
     background-size: 20%;
     width: 100%;
     position: fixed;
     z-index: 2000;
   }
+
   .cardoverlay {
     position: relative;
     background-color: rgba(0, 0, 0, 0.05);
     background-image: linear-gradient(
       to bottom,
-      rgba(247, 241, 241, 0.5),
+      rgba(151, 139, 139, 0.449),
       rgba(7, 7, 7, 1)
     );
-    top: -29.1em;
-    width: 299px;
+
+    top: -17.9em;
+
+    height: 300px;
+
+    width: 360px;
+
     border-radius: 20px;
-    height: 399px;
+
     z-index: 1;
   }
+
   .cardhover {
     transition: 0.5s;
     animation: viewcardinfo 0.5s;
     position: relative;
     display: none;
-    background-color: rgba(61, 220, 132, 0.7);
+
+    background-color: #4b8bbe;
     z-index: 100;
+
     top: -2.5em;
-    width: 299px;
+
+    height: 300px;
+
+    width: 360px;
+
     border-radius: 20px;
-    height: 399px;
   }
+
   .cardhover2 {
     transition: 0.5s;
     animation: viewcardinfo 0.5s;
     position: relative;
     display: none;
-    background-color: #4776e6;
+
+    background-color: #8e54e9;
     z-index: 100;
+
     top: -2.5em;
-    width: 299px;
+
+    height: 300px;
+
+    width: 360px;
+
     border-radius: 20px;
-    height: 399px;
   }
+
   .cardhover3 {
     transition: 0.5s;
     animation: viewcardinfo 0.5s;
     position: relative;
     display: none;
+
+    background-color: tomato;
     z-index: 100;
+
     top: -2.5em;
-    width: 299px;
+
+    height: 300px;
+
+    width: 360px;
+
     border-radius: 20px;
-    height: 399px;
-    background-color: #8e54e9;
   }
+
   .cardhover4 {
     transition: 0.5s;
     animation: viewcardinfo 0.5s;
     position: relative;
     display: none;
+
+    background-color: rgb(61, 220, 132);
     z-index: 100;
+
     top: -2.5em;
-    width: 299px;
+
+    height: 300px;
+
+    width: 360px;
+
     border-radius: 20px;
-    height: 399px;
-    background-color: #e43a15;
   }
+
   #logo {
     position: relative;
     width: 60px;
-    top: -80px;
+    top: -5px;
     height: 60px;
   }
+
   #gitmid {
     position: absolute;
-    top: 325px;
+    top: 220px;
     display: flex;
-    left: 150px;
+    left: 200px;
     z-index: 0;
     width: 60px;
     height: 60px;
     padding: 10px;
+
     border-radius: 50%;
     background-color: #4776e6;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
+
   #nextmid {
     position: absolute;
-    top: 325px;
+    top: 220px;
     display: flex;
-    left: 220px;
+    left: 280px;
+
     z-index: 0;
     width: 60px;
     height: 60px;
     padding: 10px;
+
     border-radius: 50%;
     background-color: #4776e6;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
+
   .gridyoutube {
     position: relative;
     overflow-x: scroll;
     box-sizing: content-box; /* So the width will be 100% + 17px */
     margin-top: 10px;
     display: grid;
+    justify-content: center;
+
+    align-items: center;
     overflow: hidden;
+
     animation: procards 0.5s;
     transition: 0.2s;
+
     /* background: url(/gifd/ytb.gif); */
+
     background-attachment: fixed;
     background-position: center;
+
     background-repeat: no-repeat;
     background-size: cover;
+
     grid-template-columns: auto;
     top: -0px;
     justify-content: center;
     height: inherit;
   }
+
+  .youtubeel {
+    width: 620px;
+  }
+
   .lastgrid {
     height: 600px;
     overflow: hidden;
   }
+
   .y2 {
     position: relative;
     left: 100px;
   }
+
   .y2 img {
     width: 350px;
   }
+
   .y2 h1 {
     width: 350px;
   }
+
   .youtubevid {
-    width: 370px;
+    width: 350px;
+
     position: relative;
     left: 150px;
   }
+
   .contactgrid {
     position: relative;
     overflow-x: scroll;
     box-sizing: content-box; /* So the width will be 100% + 17px */
     margin-top: 10px;
+
     display: grid;
     overflow: hidden;
+
     animation: procards 0.5s;
     transition: 0.2s;
+
     grid-template-columns: auto;
     top: 40px;
+
     height: 1200px;
   }
+
   .socials {
     position: relative;
     top: -30px;
   }
+
   .youtubesectionandcontact {
     position: relative;
-    top: 1010px;
+    top: 1120px;
     height: 1900px;
     background-color: #2c2b2d;
   }
+
   .spotify {
     position: relative;
     top: -90px;
   }
+
   .address {
     position: relative;
     top: -60px;
   }
 
-  .yotubesection1 .head {
-    top: 0px;
+  .head {
+    display: none;
   }
 
   .footer {
     position: absolute;
     width: 100%;
     height: 70%;
+
     transition: 0.5s;
-    top: 800%;
+    top: 855%;
     backdrop-filter: blur(5px);
     left: 0;
+
     bottom: 0;
+
     /* Set a specific height */
     min-height: 100px;
+
     /* Create the parallax scrolling effect */
     /* background-attachment: fixed;
     background-position: center;
@@ -1771,103 +2388,119 @@ svg {
     background-color: #2c2b2d;
     border-top: 2px rgba(255, 255, 255, 0.079) solid;
   }
+
+  .skills {
+    top: 200%;
+  }
+
   .footerg1 {
     position: relative;
+
     display: grid;
     overflow: hidden;
+
     animation: procards 0.5s;
     transition: 0.2s;
+
     grid-template-columns: auto auto;
     width: inherit;
     justify-content: center;
   }
+
   .f1 {
     width: 200px;
     height: 250px;
     margin: 5px;
   }
+
   .footlogo {
     position: relative;
     left: 60px;
     top: 50px;
     width: 100px;
   }
+
   .extra {
     position: relative;
     left: 210px;
     top: -20px;
   }
+
   .socf {
     width: 100px;
     left: -140px;
     height: 50px;
     top: -50px;
   }
+
+  #preloader1 {
+    background-size: 40%;
+  }
+
+  @keyframes loader {
+    0% {
+      background-size: 100%;
+    }
+
+    100% {
+      background-size: 40%;
+    }
+  }
+
   .socf img {
     width: 40px;
   }
+
   .footerg2 {
     height: 10%;
+
     position: relative;
     top: 20px;
   }
+
   body {
     background-color: #3c3b3e;
   }
-  .skills {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-    top: 200%;
-    left: 0;
-    bottom: 0;
-    /* Set a specific height */
-    min-height: 860px;
-    /* Create the parallax scrolling effect */
-    /* background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    transition: 0.5s;
-    right: 0;
-    margin: auto;
-    color: #e1e1e1;
-    background-color: #2c2b2d;
-  }
 
-  .projects {
-    position: absolute;
-    width: 100%;
-    background-color: #2c2b2d;
-    height: 100%;
-    transition: 0.5s;
-    top: 200%;
-    left: 0;
-    bottom: 0;
-    /* Set a specific height */
-    min-height: 950px;
-    /* Create the parallax scrolling effect */
-    /* background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    transition: 0.5s;
-    right: 0;
-    margin: auto;
-    color: #e1e1e1;
+  .cardheading {
+    position: relative;
+    font-family: "Press Start 2P", cursive;
+    width: 200px;
+    top: 230px;
+
+    left: 100px;
+    z-index: 129;
+    font-size: 1.2rem;
   }
 
   .work-header {
     position: relative;
+    top: 220px;
+  }
+  .pronav {
+    position: relative;
     top: 300px;
-    z-index: 20;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    font-size: 2rem;
-    color: #f4ebea;
+    border-radius: 20px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.267);
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    width: 370px;
+  }
+
+  .pronav button {
+    padding: 10px;
+    background: none;
+    font-size: 30px;
+    color: white;
+    border: none;
+    margin: 9px;
+    width: 100px;
+  }
+
+  .projects {
+    top: 200%;
   }
 }
