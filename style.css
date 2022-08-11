@@ -590,15 +590,8 @@ svg {
   top: 190px;
   z-index: 1;
 }
-@keyframes up {
-  0% {
-    top: -600px;
-    display: none;
-  }
-  100% {
-    top: 0px;
-  }
-}
+
+
 .gridel1 {
   position: relative;
   margin: 15px;
@@ -682,14 +675,7 @@ svg {
   animation: procards 10s;
   width: 299px;
 }
-@keyframes procards {
-  0% {
-    top: 300px;
-  }
-  100% {
-    top: 120px;
-  }
-}
+
 .cardimg {
   border-radius: 20px;
   filter: blur(0.9px);
@@ -1543,15 +1529,7 @@ svg {
     height: 10px;
     z-index: 1;
   }
-  @keyframes up {
-    0% {
-      top: -600px;
-      display: none;
-    }
-    100% {
-      top: 0px;
-    }
-  }
+
   .gridel1 {
     position: relative;
     margin-top: -80px;
