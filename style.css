@@ -1572,13 +1572,14 @@ svg {
   .grid1projects {
     position: relative;
     overflow-x: scroll;
+    overflow-y: hidden;
     box-sizing: content-box; /* So the width will be 100% + 17px */
     margin-top: 10px;
     display: grid;
     transition: 0.2s;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
     top: 250px;
-    height: 500px;
+    height: 600px;
   }
   .gridwd {
     background: n;
