@@ -1019,7 +1019,7 @@ svg {
   animation: procards 0.5s;
   transition: 0.2s;
   grid-template-columns: auto auto auto auto;
-  top: -20px;
+  top: 40px;
   justify-content: center;
   margin: 20px;
   height: 300px;
@@ -1885,5 +1885,18 @@ svg {
     right: 0;
     margin: auto;
     color: #e1e1e1;
+  }
+
+  .work-header {
+    position: relative;
+    top: 300px;
+    z-index: 20;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 2rem;
+    color: #f4ebea;
   }
 }
