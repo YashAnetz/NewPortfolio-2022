@@ -10,6 +10,10 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+.headlogo {
+  width: 20px;
+}
 #fbs {
   width: 10px;
 }
@@ -654,7 +658,7 @@ svg {
 }
 .work-header {
   position: relative;
-  top: 270px;
+  top: 200px;
   z-index: 20;
   background-attachment: fixed;
   background-position: center;
@@ -1255,10 +1259,15 @@ svg {
 }
 .yotubesection1 .head {
   position: relative;
-  left: 50%;
-  width: 100px;
-  top: -3%;
-  font-size: 25px;
+  top: 30px;
+  z-index: 20;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-size: 2rem;
+  color: #f4ebea;
 }
 .footer {
   position: absolute;
