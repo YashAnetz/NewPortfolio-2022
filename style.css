@@ -359,15 +359,7 @@ body {
   top: 180px;
   z-index: 1;
 }
-@keyframes up {
-  0% {
-    top: -600px;
-    display: none;
-  }
-  100% {
-    top: 0px;
-  }
-}
+
 .gridel {
   position: relative;
   margin: 15px;
