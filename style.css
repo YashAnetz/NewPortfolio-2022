@@ -591,7 +591,6 @@ svg {
   z-index: 1;
 }
 
-
 .gridel1 {
   position: relative;
   margin: 15px;
@@ -656,16 +655,17 @@ svg {
 .grid1projects {
   position: relative;
   overflow-x: scroll;
+  animation: up 1s;
   overflow-y: hidden;
   box-sizing: content-box; /* So the width will be 100% + 17px */
   margin-top: 10px;
   display: grid;
-  animation: procards 0.5s;
   transition: 0.2s;
   grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-  top: 50px;
+  top: 80px;
   height: 500px;
 }
+
 .gridwd {
   background: none;
   height: 399px;
@@ -1558,9 +1558,10 @@ svg {
     display: grid;
     transition: 0.2s;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-    top: 180px;
+    top: 300px;
     height: 600px;
   }
+
   .gridwd {
     background: n;
     height: 399px;
